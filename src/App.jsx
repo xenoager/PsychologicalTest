@@ -1,60 +1,51 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import Home from "./pages/Home.jsx";
+import Quiz from "./pages/Quiz.jsx";
+import Result from "./pages/Result.jsx";
+import "./styles.css";
 
-const THEMES = {
-  grape: { "--accent": "#6d28d9" },
-  ocean: { "--accent": "#0284c7" },
-  sunset: { "--accent": "#f97316" },
-  lime: { "--accent": "#10b981" },
-};
+/**
+ * 전역 라우트 감시:
+ * - 홈('/')에서 상세로 이동하는 순간: 스크롤Y 저장 + 복원 플래그 on
+ * - 홈('/')으로 돌아오면: 복원은 Home.jsx에서 '목록 렌더 완료 후' 실행
+ * - 브라우저 기본 스크롤 복원은 끈다.
+ */
+function ScrollKeeper() {
+  const location = useLocation();
+  const prevPath = useRef(location.pathname);
+
+  useEffect(() => {
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  }, []);
+
+  useEffect(() => {
+    const from = prevPath.current;
+    const to = location.pathname;
+
+    // 홈에서 떠날 때: 현재 스크롤 저장 + 복원 필요 플래그 설정
+    if (from === "/" && to !== "/") {
+      try {
+        sessionStorage.setItem("ps:quiz-list:scroll", String(window.scrollY || 0));
+        sessionStorage.setItem("ps:quiz-list:need", "1");
+      } catch {}
+    }
+
+    prevPath.current = to;
+  }, [location]);
+
+  return null;
+}
 
 export default function App() {
-  const nav = useNavigate();
-  const [theme, setTheme] = useState("grape");
-
-  function applyTheme(name) {
-    setTheme(name);
-    const vars = THEMES[name] || {};
-    Object.entries(vars).forEach(([k, v]) =>
-      document.documentElement.style.setProperty(k, v)
-    );
-  }
-
   return (
-    <div className="wrap">
-      <div className="panel">
-        <div className="badge">STATIC</div>
-        <h1 className="title">
-          티니핑 MBTI 유형테스트 <small>(비공식)</small>
-        </h1>
-        <p className="subtitle">서버 없이도 동작하는 스모어 스타일 테스트</p>
-
-        <div className="theme">
-          {Object.keys(THEMES).map((k) => (
-            <button
-              key={k}
-              onClick={() => applyTheme(k)}
-              className={theme === k ? "active" : ""}
-            >
-              {k}
-            </button>
-          ))}
-        </div>
-
-        <div style={{ height: 12 }} />
-        <div className="cta">
-          <button className="btn primary" onClick={() => nav("/tinyping")}>
-            테스트 시작하기
-          </button>
-        </div>
-        <ul className="bullets">
-          <li>
-            데이터는 <code>public/quizzes/*.json</code>으로 관리
-          </li>
-          <li>채점은 브라우저에서 계산 (서버 불필요)</li>
-          <li>결과별 OG 페이지를 정적으로 제공 (SNS 미리보기 대응)</li>
-        </ul>
-      </div>
-    </div>
+    <>
+      <ScrollKeeper />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path=":slug" element={<Quiz />} />
+        <Route path=":slug/result/:type" element={<Result />} />
+      </Routes>
+    </>
   );
 }

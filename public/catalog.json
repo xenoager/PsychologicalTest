@@ -5,7 +5,8 @@
     "라이프스타일",
     "교육",
     "부모&육아",
-    "커리어"
+    "커리어",
+    "덕력 테스트"
   ],
   "items": [
     {
@@ -73,7 +74,7 @@
     },
     {
       "slug": "office-pastlife",
-      "title": "직장인 전생 테스트 (팬메이드)",
+      "title": "직장인 전생 테스트",
       "subtitle": "내 업무 습관으로 추정한 전생 스타일",
       "category": "엔터테인먼트",
       "badge": "전생",
@@ -82,7 +83,7 @@
     },
     {
       "slug": "geumjjok",
-      "title": "금쪽이 테스트 (팬메이드)",
+      "title": "금쪽이 테스트",
       "subtitle": "내 안의 금쪽력(?)을 가볍게 점검",
       "category": "부모&육아",
       "badge": "성향",
@@ -219,7 +220,7 @@
       "slug": "txt-fandom",
       "title": "투모로우바이투게더 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/txt-fandom.svg"
@@ -228,7 +229,7 @@
       "slug": "ive-fandom",
       "title": "아이브 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/ive-fandom.svg"
@@ -237,7 +238,7 @@
       "slug": "bts-fandom",
       "title": "BTS 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/bts-fandom.svg"
@@ -246,7 +247,7 @@
       "slug": "blackpink-fandom",
       "title": "BLACKPINK 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/blackpink-fandom.svg"
@@ -255,7 +256,7 @@
       "slug": "twice-fandom",
       "title": "TWICE 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/twice-fandom.svg"
@@ -264,7 +265,7 @@
       "slug": "seventeen-fandom",
       "title": "SEVENTEEN 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/seventeen-fandom.svg"
@@ -273,7 +274,7 @@
       "slug": "nct-dream-fandom",
       "title": "NCT DREAM 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/nct-dream-fandom.svg"
@@ -282,7 +283,7 @@
       "slug": "newjeans-fandom",
       "title": "NewJeans 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/newjeans-fandom.svg"
@@ -291,7 +292,7 @@
       "slug": "stray-kids-fandom",
       "title": "Stray Kids 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/stray-kids-fandom.svg"
@@ -300,7 +301,7 @@
       "slug": "red-velvet-fandom",
       "title": "Red Velvet 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/red-velvet-fandom.svg"
@@ -309,7 +310,7 @@
       "slug": "aespa-fandom",
       "title": "aespa 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/aespa-fandom.svg"
@@ -318,7 +319,7 @@
       "slug": "le-sserafim-fandom",
       "title": "LE SSERAFIM 덕력 테스트",
       "subtitle": "스스로 점검하는 팬력 12문항",
-      "category": "엔터테인먼트",
+      "category": "덕력 테스트",
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/le-sserafim-fandom.svg"

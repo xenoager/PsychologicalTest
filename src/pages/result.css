@@ -1,0 +1,8 @@
+.result-card{background:#fff;border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.result-card .score{font-size:18px;margin-bottom:8px}
+.band-label{font-size:20px;font-weight:700}
+.opts{list-style:none;padding-left:0}
+.opts li{padding:4px 8px;border-radius:8px;margin:2px 0}
+.opts li.correct{outline:2px solid #10b981}
+.opts li.selected{background:#f3f4f6}
+.ok{color:#10b981}.no{color:#ef4444}

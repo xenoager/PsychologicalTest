@@ -1,0 +1,275 @@
+{
+  "slug": "le-sserafim-fandom",
+  "title": "LE SSERAFIM 덕력 테스트",
+  "type": "mcq",
+  "category": "덕력 테스트",
+  "badge": "덕력",
+  "questions": [
+    {
+      "text": "다음 중 LE SSERAFIM 멤버가 **아닌** 사람은?",
+      "options": [
+        {
+          "label": "홍길동"
+        },
+        {
+          "label": "KIM CHAEWON"
+        },
+        {
+          "label": "HONG EUNCHAE"
+        },
+        {
+          "label": "KAZUHA"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    },
+    {
+      "text": "LE SSERAFIM의 공식 팬덤명은?",
+      "options": [
+        {
+          "label": "ONCE"
+        },
+        {
+          "label": "ARMY"
+        },
+        {
+          "label": "STAY"
+        },
+        {
+          "label": "FEARNOT"
+        }
+      ],
+      "correct_index": 3,
+      "explain": ""
+    },
+    {
+      "text": "LE SSERAFIM의 소속(레이블)은?",
+      "options": [
+        {
+          "label": "SOURCE MUSIC"
+        },
+        {
+          "label": "YG Entertainment"
+        },
+        {
+          "label": "JYP Entertainment"
+        },
+        {
+          "label": "SM Entertainment"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    },
+    {
+      "text": "LE SSERAFIM의 현재 구성원 수는?",
+      "options": [
+        {
+          "label": "6"
+        },
+        {
+          "label": "7"
+        },
+        {
+          "label": "4"
+        },
+        {
+          "label": "5"
+        }
+      ],
+      "correct_index": 3,
+      "explain": ""
+    },
+    {
+      "text": "LE SSERAFIM의 데뷔 연도는?",
+      "options": [
+        {
+          "label": "2023"
+        },
+        {
+          "label": "2024"
+        },
+        {
+          "label": "2022"
+        },
+        {
+          "label": "2021"
+        }
+      ],
+      "correct_index": 2,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 LE SSERAFIM의 곡은?",
+      "options": [
+        {
+          "label": "Like OOH-AHH"
+        },
+        {
+          "label": "Very Nice"
+        },
+        {
+          "label": "Hype Boy"
+        },
+        {
+          "label": "FEARLESS"
+        }
+      ],
+      "correct_index": 3,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 LE SSERAFIM의 곡이 **아닌** 것은?",
+      "options": [
+        {
+          "label": "Hype Boy"
+        },
+        {
+          "label": "ANTIFRAGILE"
+        },
+        {
+          "label": "UNFORGIVEN"
+        },
+        {
+          "label": "FEARLESS"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    },
+    {
+      "text": "LE SSERAFIM의 리더는?",
+      "options": [
+        {
+          "label": "SAKURA"
+        },
+        {
+          "label": "KIM CHAEWON"
+        },
+        {
+          "label": "HUH YUNJIN"
+        },
+        {
+          "label": "HONG EUNCHAE"
+        }
+      ],
+      "correct_index": 1,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 LE SSERAFIM의 곡은?",
+      "options": [
+        {
+          "label": "Hype Boy"
+        },
+        {
+          "label": "FEARLESS"
+        },
+        {
+          "label": "Cheer Up"
+        },
+        {
+          "label": "TT"
+        }
+      ],
+      "correct_index": 1,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 LE SSERAFIM의 곡이 **아닌** 것은?",
+      "options": [
+        {
+          "label": "Next Level"
+        },
+        {
+          "label": "ANTIFRAGILE"
+        },
+        {
+          "label": "UNFORGIVEN"
+        },
+        {
+          "label": "FEARLESS"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 LE SSERAFIM의 곡은?",
+      "options": [
+        {
+          "label": "Perfect Red Velvet"
+        },
+        {
+          "label": "Skool Luv Affair"
+        },
+        {
+          "label": "Square Two"
+        },
+        {
+          "label": "UNFORGIVEN"
+        }
+      ],
+      "correct_index": 3,
+      "explain": ""
+    },
+    {
+      "text": "LE SSERAFIM의 메인보컬/보컬 라인에 속하는 인물은?",
+      "options": [
+        {
+          "label": "HUH YUNJIN"
+        },
+        {
+          "label": "SAKURA"
+        },
+        {
+          "label": "KAZUHA"
+        },
+        {
+          "label": "KIM CHAEWON"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    }
+  ],
+  "scoring": {
+    "per_question": 1,
+    "correct_gets": 1,
+    "wrong_gets": 0
+  },
+  "result_bands": [
+    {
+      "min": 0,
+      "max": 3,
+      "label": "새싹 FEARNOT",
+      "desc": "LE SSERAFIM의 이름·대표곡을 막 익힌 단계! 퀴즈로 기초를 다졌어요. 데뷔곡·팬덤명·소속사를 한 번 더 복습해보면 금방 성장합니다."
+    },
+    {
+      "min": 4,
+      "max": 6,
+      "label": "응원단 FEARNOT",
+      "desc": "멤버/팬덤/대표곡 정보가 제법 탄탄합니다. 응원법·활동 타임라인을 조금만 더 보면 실전 감각이 붙어요."
+    },
+    {
+      "min": 7,
+      "max": 9,
+      "label": "서포트 에이스",
+      "desc": "멤버 포지션·소속사·데뷔 연도까지 꽤 정확해요. 신곡/앨범이 뜨면 바로 플레이하는 FEARNOT의 에이스!"
+    },
+    {
+      "min": 10,
+      "max": 11,
+      "label": "코어 FEARNOT",
+      "desc": "활동 히스토리와 대표 앨범을 술술! 컴백/콘서트 공지도 손에 잡히네요. 친구 입덕도 자신 있게 안내할 수 있어요."
+    },
+    {
+      "min": 12,
+      "max": 12,
+      "label": "레전드 LE SSERAFIM 도슨트",
+      "desc": "퀴즈 만점! 데뷔-대표곡-앨범까지 막힘없어요. LE SSERAFIM 박사님, 오늘도 FEARNOT의 길잡이 역할 기대합니다."
+    }
+  ],
+  "disclaimer": "이 테스트는 팬 활동을 재미로 점검하는 용도로 제작되었습니다."
+}

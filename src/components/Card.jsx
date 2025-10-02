@@ -7,7 +7,7 @@ export default function Card({ item }) {
   const cover =
     item.image || item.thumbnail || item.thumb || item.cover || null;
   return (
-    <div className="card" role="button" onClick={() => nav("/" + item.slug)}>
+    <div className="card" role="button" onClick={() => { try { sessionStorage.setItem("ps:quiz-list:scroll", String(window.scrollY||0)); sessionStorage.setItem("ps:quiz-list:need","1"); } catch {}; nav("/" + item.slug); }}>
       <div
         className="thumb"
         style={{

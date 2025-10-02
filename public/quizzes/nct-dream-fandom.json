@@ -1,0 +1,275 @@
+{
+  "slug": "nct-dream-fandom",
+  "title": "NCT DREAM 덕력 테스트",
+  "type": "mcq",
+  "category": "덕력 테스트",
+  "badge": "덕력",
+  "questions": [
+    {
+      "text": "다음 중 NCT DREAM 멤버가 **아닌** 사람은?",
+      "options": [
+        {
+          "label": "홍길동"
+        },
+        {
+          "label": "HAECHAN"
+        },
+        {
+          "label": "JISUNG"
+        },
+        {
+          "label": "JENO"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    },
+    {
+      "text": "NCT DREAM의 공식 팬덤명은?",
+      "options": [
+        {
+          "label": "STAY"
+        },
+        {
+          "label": "ONCE"
+        },
+        {
+          "label": "ARMY"
+        },
+        {
+          "label": "NCTzen"
+        }
+      ],
+      "correct_index": 3,
+      "explain": ""
+    },
+    {
+      "text": "NCT DREAM의 소속(레이블)은?",
+      "options": [
+        {
+          "label": "SM Entertainment"
+        },
+        {
+          "label": "SM Entertainment"
+        },
+        {
+          "label": "JYP Entertainment"
+        },
+        {
+          "label": "YG Entertainment"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    },
+    {
+      "text": "NCT DREAM의 현재 구성원 수는?",
+      "options": [
+        {
+          "label": "8"
+        },
+        {
+          "label": "6"
+        },
+        {
+          "label": "9"
+        },
+        {
+          "label": "7"
+        }
+      ],
+      "correct_index": 3,
+      "explain": ""
+    },
+    {
+      "text": "NCT DREAM의 데뷔 연도는?",
+      "options": [
+        {
+          "label": "2017"
+        },
+        {
+          "label": "2018"
+        },
+        {
+          "label": "2016"
+        },
+        {
+          "label": "2015"
+        }
+      ],
+      "correct_index": 2,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 NCT DREAM의 곡은?",
+      "options": [
+        {
+          "label": "Dynamite"
+        },
+        {
+          "label": "Chewing Gum"
+        },
+        {
+          "label": "Fearless"
+        },
+        {
+          "label": "Hype Boy"
+        }
+      ],
+      "correct_index": 1,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 NCT DREAM의 곡이 **아닌** 것은?",
+      "options": [
+        {
+          "label": "Chewing Gum"
+        },
+        {
+          "label": "Fearless"
+        },
+        {
+          "label": "Hot Sauce"
+        },
+        {
+          "label": "Beatbox"
+        }
+      ],
+      "correct_index": 1,
+      "explain": ""
+    },
+    {
+      "text": "NCT DREAM의 리더는?",
+      "options": [
+        {
+          "label": "HAECHAN"
+        },
+        {
+          "label": "CHENLE"
+        },
+        {
+          "label": "RENJUN"
+        },
+        {
+          "label": "MARK"
+        }
+      ],
+      "correct_index": 3,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 NCT DREAM의 곡은?",
+      "options": [
+        {
+          "label": "Hype Boy"
+        },
+        {
+          "label": "TT"
+        },
+        {
+          "label": "Chewing Gum"
+        },
+        {
+          "label": "Cheer Up"
+        }
+      ],
+      "correct_index": 2,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 NCT DREAM의 곡이 **아닌** 것은?",
+      "options": [
+        {
+          "label": "Hot Sauce"
+        },
+        {
+          "label": "Beatbox"
+        },
+        {
+          "label": "Next Level"
+        },
+        {
+          "label": "Chewing Gum"
+        }
+      ],
+      "correct_index": 2,
+      "explain": ""
+    },
+    {
+      "text": "다음 중 NCT DREAM의 곡은?",
+      "options": [
+        {
+          "label": "Hot Sauce"
+        },
+        {
+          "label": "Perfect Red Velvet"
+        },
+        {
+          "label": "Square Two"
+        },
+        {
+          "label": "Skool Luv Affair"
+        }
+      ],
+      "correct_index": 0,
+      "explain": ""
+    },
+    {
+      "text": "NCT DREAM의 메인보컬/보컬 라인에 속하는 인물은?",
+      "options": [
+        {
+          "label": "RENJUN"
+        },
+        {
+          "label": "CHENLE"
+        },
+        {
+          "label": "JAEMIN"
+        },
+        {
+          "label": "JENO"
+        }
+      ],
+      "correct_index": 1,
+      "explain": ""
+    }
+  ],
+  "scoring": {
+    "per_question": 1,
+    "correct_gets": 1,
+    "wrong_gets": 0
+  },
+  "result_bands": [
+    {
+      "min": 0,
+      "max": 3,
+      "label": "새싹 NCTzen",
+      "desc": "NCT DREAM의 이름·대표곡을 막 익힌 단계! 퀴즈로 기초를 다졌어요. 데뷔곡·팬덤명·소속사를 한 번 더 복습해보면 금방 성장합니다."
+    },
+    {
+      "min": 4,
+      "max": 6,
+      "label": "응원단 NCTzen",
+      "desc": "멤버/팬덤/대표곡 정보가 제법 탄탄합니다. 응원법·활동 타임라인을 조금만 더 보면 실전 감각이 붙어요."
+    },
+    {
+      "min": 7,
+      "max": 9,
+      "label": "서포트 에이스",
+      "desc": "멤버 포지션·소속사·데뷔 연도까지 꽤 정확해요. 신곡/앨범이 뜨면 바로 플레이하는 NCTzen의 에이스!"
+    },
+    {
+      "min": 10,
+      "max": 11,
+      "label": "코어 NCTzen",
+      "desc": "활동 히스토리와 대표 앨범을 술술! 컴백/콘서트 공지도 손에 잡히네요. 친구 입덕도 자신 있게 안내할 수 있어요."
+    },
+    {
+      "min": 12,
+      "max": 12,
+      "label": "레전드 NCT DREAM 도슨트",
+      "desc": "퀴즈 만점! 데뷔-대표곡-앨범까지 막힘없어요. NCT DREAM 박사님, 오늘도 NCTzen의 길잡이 역할 기대합니다."
+    }
+  ],
+  "disclaimer": "이 테스트는 팬 활동을 재미로 점검하는 용도로 제작되었습니다."
+}
