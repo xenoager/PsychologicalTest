@@ -12,6 +12,17 @@ export default function Quiz() {
   const [quiz, setQuiz] = useState(null); // normalized
   const [answers, setAnswers] = useState({});
   const [index, setIndex] = useState(0);
+  const [showLastWarn, setShowLastWarn] = useState(false); // ⬅︎ 레이어 팝업 표시 상태
+  useEffect(() => {
+    // 팝업 표시 중에는 배경 스크롤 잠금
+    if (showLastWarn) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = prev;
+      };
+    }
+  }, [showLastWarn]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -105,15 +116,16 @@ export default function Quiz() {
   function choose(qid, oid) {
     setAnswers((prev) => ({ ...prev, [qid]: oid }));
   }
+
   function goNext() {
     if (index < questions.length - 1) {
       setIndex(index + 1);
       return;
     }
-    // 마지막 문항이 선택되지 않았으면 경고 후 중단
+    // 마지막 문항이 선택되지 않았으면 레이어 팝업 표시 후 중단
     const lastQ = questions[questions.length - 1];
     if (!answers[lastQ.id]) {
-      alert('마지막 응답을 해주세요.');
+      setShowLastWarn(true);
       return;
     }
     const scored = evaluateQuiz(quiz || raw, answers);
@@ -157,6 +169,7 @@ export default function Quiz() {
       state: { result, scored, quiz: quiz || raw, answers },
     });
   }
+
   function goPrev() {
     if (index > 0) setIndex(index - 1);
   }
@@ -167,6 +180,7 @@ export default function Quiz() {
         <div className="card">로딩 중…</div>
       </div>
     );
+
   if (error) {
     const msg = (error?.message || "").toString();
     return (
@@ -190,6 +204,7 @@ export default function Quiz() {
       </div>
     );
   }
+
   if (!quiz)
     return (
       <div className="wrap">
@@ -258,11 +273,72 @@ export default function Quiz() {
             이전
           </button>
           <div style={{ flex: 1 }} />
-          <button className="btn primary" onClick={goNext} disabled={index < total - 1 && !selected}>
+          <button
+            className="btn primary"
+            onClick={goNext}
+            // 마지막 문항: 선택 없어도 버튼 클릭은 가능 → 레이어 팝업으로 안내
+            disabled={index < total - 1 && !selected}
+          >
             {index < total - 1 ? "다음" : "결과 보기"}
           </button>
         </div>
       </div>
+
+      {/* ⬇︎ 레이어 팝업(모달) — UI 구조/스타일 유지용 카드 사용 */}
+      {showLastWarn && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="안내"
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 1000,
+            background: "rgba(0,0,0,.5)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: 16,
+          }}
+          onClick={() => setShowLastWarn(false)}
+        >
+          <div
+            className="card"
+            style={{
+              position: "relative",
+              maxWidth: 420,
+              width: "100%",
+              padding: 20,
+              borderRadius: 16,
+              boxShadow: "0 12px 40px rgba(0,0,0,.3)",
+              background: "var(--card-bg, #0f1220)",
+              border: "1px solid rgba(255,255,255,.08)",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="kicker">안내</div>
+            <h3 className="title" style={{ marginTop: 6 }}>
+              마지막 응답을 해주세요
+            </h3>
+            <p style={{ opacity: 0.8, marginTop: 8 }}>
+              모든 문항에 응답해야 결과를 볼 수 있어요.
+            </p>
+            <div
+              className="toolbar"
+              style={{
+                marginTop: 16,
+                display: "flex",
+                gap: 8,
+                justifyContent: "flex-end",
+              }}
+            >
+              <button className="btn" onClick={() => setShowLastWarn(false)}>
+                확인
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
