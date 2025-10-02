@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#g)" />
+  <g fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" transform="translate(680.000,189.000) scale(0.400)">
+    
+      <circle cx="520" cy="260" r="40" />
+      <circle cx="600" cy="300" r="28" />
+      <path d="M480 340h120a60 60 0 0 1 60 60v60H420v-60a60 60 0 0 1 60-60z" />
+      <path d="M760 300l60 24 60-24v60c0 48-36 96-60 108-24-12-60-60-60-108z" />
+    
+  </g>
+<g fill="#ffffff"><text x="120.0" y="300.0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="64.000" font-weight="700">K-부모 테스트</text><text x="120.0" y="370.0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="28.000" opacity="0.9">한국형 양육 문화를 나는 얼마나 닮았나</text></g></svg>

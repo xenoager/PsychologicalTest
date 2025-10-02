@@ -1,0 +1,327 @@
+{
+  "categories": [
+    "엔터테인먼트",
+    "연애&결혼",
+    "라이프스타일",
+    "교육",
+    "부모&육아",
+    "커리어"
+  ],
+  "items": [
+    {
+      "slug": "teenping-mbti",
+      "title": "티니핑 MBTI 유형테스트",
+      "subtitle": "12문항으로 알아보는 나와 닮은 티니핑 (비공식)",
+      "category": "엔터테인먼트",
+      "badge": "MBTI",
+      "author": "유형테스트",
+      "image": "/og/teenping-mbti.svg"
+    },
+    {
+      "slug": "love-style",
+      "title": "이번 달 내 사랑운",
+      "subtitle": "12문항으로 보는 이달의 연애 흐름 (엔터테인먼트)",
+      "category": "연애&결혼",
+      "badge": "운세",
+      "author": "유형테스트",
+      "image": "/og/love-style.svg"
+    },
+    {
+      "slug": "love-rank",
+      "title": "연애 직급 테스트",
+      "subtitle": "12문항으로 알아보는 내 연애 직급",
+      "category": "연애&결혼",
+      "badge": "연애",
+      "author": "유형테스트",
+      "image": "/og/love-rank.svg"
+    },
+    {
+      "slug": "study-habit",
+      "title": "공부 습관 자가진단",
+      "subtitle": "집중/계획/실행 습관 점검",
+      "category": "교육",
+      "badge": "습관",
+      "author": "유형테스트",
+      "image": "/og/study-habit.svg"
+    },
+    {
+      "slug": "leaf-level",
+      "title": "깻잎 레벨 테스트",
+      "subtitle": "관여·자율의 경계 어디쯤?",
+      "category": "연애&결혼",
+      "badge": "연애",
+      "author": "유형테스트",
+      "image": "/og/love-thermo.svg"
+    },
+    {
+      "slug": "love-thermo",
+      "title": "내 연애 녹는점·끓는점",
+      "subtitle": "호감이 녹는 순간 vs. 화가 끓는 순간",
+      "category": "연애&결혼",
+      "badge": "연애",
+      "author": "유형테스트",
+      "image": "/og/leaf-level.svg"
+    },
+    {
+      "slug": "k-parent",
+      "title": "K-부모 테스트",
+      "subtitle": "한국형 양육 문화를 나는 얼마나 닮았나",
+      "category": "부모&육아",
+      "badge": "부모",
+      "author": "유형테스트",
+      "image": "/og/k-parent.svg"
+    },
+    {
+      "slug": "office-pastlife",
+      "title": "직장인 전생 테스트 (팬메이드)",
+      "subtitle": "내 업무 습관으로 추정한 전생 스타일",
+      "category": "엔터테인먼트",
+      "badge": "전생",
+      "author": "유형테스트",
+      "image": "/og/office-pastlife.svg"
+    },
+    {
+      "slug": "geumjjok",
+      "title": "금쪽이 테스트 (팬메이드)",
+      "subtitle": "내 안의 금쪽력(?)을 가볍게 점검",
+      "category": "부모&육아",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/geumjjok.svg"
+    },
+    {
+      "slug": "mom-type",
+      "title": "당신은 어떤 엄마일까요?",
+      "subtitle": "돌봄·규칙·공감의 균형을 체크",
+      "category": "부모&육아",
+      "badge": "부모",
+      "author": "유형테스트",
+      "image": "/og/mom-type.svg"
+    },
+    {
+      "slug": "psychopath-check",
+      "title": "사이코패스 경향 자가체크",
+      "subtitle": "12문항으로 가볍게 점검 (엔터테인먼트)",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/psychopath-check.svg"
+    },
+    {
+      "slug": "sociopath-check",
+      "title": "소시오패스 경향 자가체크",
+      "subtitle": "12문항으로 가볍게 점검 (엔터테인먼트)",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/sociopath-check.svg"
+    },
+    {
+      "slug": "spicy-mbti",
+      "title": "MBTI 매운맛 테스트",
+      "subtitle": "12문항, 선호의 끝맛까지!",
+      "category": "엔터테인먼트",
+      "badge": "MBTI",
+      "author": "유형테스트",
+      "image": "/og/spicy-mbti.svg"
+    },
+    {
+      "slug": "couple-arguing",
+      "title": "커플 논쟁 테스트 1",
+      "subtitle": "우린 말할 때 몇 도(℃)일까?",
+      "category": "연애&결혼",
+      "badge": "커플",
+      "author": "유형테스트",
+      "image": "/og/couple-arguing.svg"
+    },
+    {
+      "slug": "couple-arguing2",
+      "title": "커플 논쟁 테스트 2",
+      "subtitle": "갈등 대처 전략 유형",
+      "category": "연애&결혼",
+      "badge": "커플",
+      "author": "유형테스트",
+      "image": "/og/couple-arguing2.svg"
+    },
+    {
+      "slug": "love-hormone",
+      "title": "연애 호르몬 테스트",
+      "subtitle": "내 연애 에너지의 맛은?",
+      "category": "연애&결혼",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/love-hormone.svg"
+    },
+    {
+      "slug": "emosense-test",
+      "title": "감성력 테스트",
+      "subtitle": "관찰·공감·조절의 균형",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/emosense-test.svg"
+    },
+    {
+      "slug": "girlexpert",
+      "title": "여잘알 테스트",
+      "subtitle": "가볍게 즐기는 상식 퀴즈",
+      "category": "엔터테인먼트",
+      "badge": "상식",
+      "author": "유형테스트",
+      "image": "/og/girlexpert.svg"
+    },
+    {
+      "slug": "mind-signal",
+      "title": "마음 시그널 테스트",
+      "subtitle": "호감·관심 시그널 읽기 감각",
+      "category": "연애&결혼",
+      "badge": "연애",
+      "author": "유형테스트",
+      "image": "/og/mind-signal.svg"
+    },
+    {
+      "slug": "work-style",
+      "title": "업무 성향 TEST",
+      "subtitle": "일할 때의 나, 실무 성향 자가진단",
+      "category": "커리어",
+      "badge": "커리어",
+      "author": "유형테스트",
+      "image": "/og/work-style.svg"
+    },
+    {
+      "slug": "job-compat",
+      "title": "지금 하는 일 궁합 테스트",
+      "subtitle": "현재 직무와의 핏을 점검",
+      "category": "커리어",
+      "badge": "직무",
+      "author": "유형테스트",
+      "image": "/og/job-compat.svg"
+    },
+    {
+      "slug": "dev-type",
+      "title": "개발자 유형 테스트",
+      "subtitle": "문제 해결·협업·생산성 스타일",
+      "category": "커리어",
+      "badge": "개발",
+      "author": "유형테스트",
+      "image": "/og/dev-type.svg"
+    },
+    {
+      "slug": "17first-impression",
+      "title": "17금 첫인상 테스트",
+      "subtitle": "재미로 보는 첫인상 유형",
+      "category": "엔터테인먼트",
+      "badge": "밈",
+      "author": "유형테스트",
+      "image": "/og/17first-impression.svg"
+    },
+    {
+      "slug": "txt-fandom",
+      "title": "투모로우바이투게더 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/txt-fandom.svg"
+    },
+    {
+      "slug": "ive-fandom",
+      "title": "아이브 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/ive-fandom.svg"
+    },
+    {
+      "slug": "bts-fandom",
+      "title": "BTS 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/bts-fandom.svg"
+    },
+    {
+      "slug": "blackpink-fandom",
+      "title": "BLACKPINK 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/blackpink-fandom.svg"
+    },
+    {
+      "slug": "twice-fandom",
+      "title": "TWICE 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/twice-fandom.svg"
+    },
+    {
+      "slug": "seventeen-fandom",
+      "title": "SEVENTEEN 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/seventeen-fandom.svg"
+    },
+    {
+      "slug": "nct-dream-fandom",
+      "title": "NCT DREAM 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/nct-dream-fandom.svg"
+    },
+    {
+      "slug": "newjeans-fandom",
+      "title": "NewJeans 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/newjeans-fandom.svg"
+    },
+    {
+      "slug": "stray-kids-fandom",
+      "title": "Stray Kids 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/stray-kids-fandom.svg"
+    },
+    {
+      "slug": "red-velvet-fandom",
+      "title": "Red Velvet 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/red-velvet-fandom.svg"
+    },
+    {
+      "slug": "aespa-fandom",
+      "title": "aespa 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/aespa-fandom.svg"
+    },
+    {
+      "slug": "le-sserafim-fandom",
+      "title": "LE SSERAFIM 덕력 테스트",
+      "subtitle": "스스로 점검하는 팬력 12문항",
+      "category": "엔터테인먼트",
+      "badge": "덕력",
+      "author": "유형테스트",
+      "image": "/og/le-sserafim-fandom.svg"
+    }
+  ]
+}

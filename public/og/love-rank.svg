@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffafbd" />
+      <stop offset="100%" stop-color="#ffc3a0" />
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="5" /></filter>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#g)" />
+  <g fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" transform="translate(680.000,189.000) scale(0.400)">
+    
+      <rect x="420" y="370" width="100" height="120" rx="12" />
+      <rect x="540" y="320" width="120" height="170" rx="12" />
+      <rect x="680" y="350" width="100" height="140" rx="12" />
+      <path d="M600 290c40-30 60-45 60-68a30 30 0 0 0-60 0 30 30 0 0 0-60 0c0 23 20 38 60 68z" fill="#fff" stroke="none" opacity="0.95" />
+    
+  </g>
+<g fill="#ffffff"><text x="120.0" y="300.0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="64.000" font-weight="700">연애 직급 테스트</text><text x="120.0" y="370.0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="28.000" opacity="0.9">12문항으로 알아보는 내 연애 직급</text></g></svg>

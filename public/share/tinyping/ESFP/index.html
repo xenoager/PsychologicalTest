@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>차차핑 (ESFP) | 티니핑 MBTI 유형테스트 (비공식)</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="차차핑 (ESFP)">
+    <meta property="og:description" content="ESFP 결과 페이지 — 공유 전용 미리보기">
+    <meta property="og:image" content="/og-plain.png">
+    <meta property="og:url" content="/share/tinyping/ESFP/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="차차핑 (ESFP)">
+    <meta name="twitter:description" content="ESFP 결과 페이지 — 공유 전용 미리보기">
+    <meta name="twitter:image" content="/og-plain.png">
+    <meta name="theme-color" content="#0b0c10">
+
+    <style>
+      :root { --bg:#0b0c10; --panel:#12151b; --line:#263041; --accent:#4f46e5; --text:#eaf0f6; }
+      *{box-sizing:border-box}
+      body { margin:0; font-family: system-ui, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic',
+                           'Noto Sans KR', 'Pretendard', 'Segoe UI', Roboto, 'Noto Sans', Arial, sans-serif;
+              background:var(--bg); color:var(--text); }
+      .wrap {
+        min-height:100svh;
+        display:flex; align-items:center; justify-content:center;
+        padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right))
+                 max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+      }
+      .card {
+        width: min(92vw, 880px);
+        background:var(--panel); border:1px solid var(--line); border-radius:18px; overflow:hidden;
+        box-shadow: 0 20px 50px rgba(0,0,0,.45);
+      }
+      .hero {
+        position:relative;
+        height: clamp(180px, 36vh, 320px);
+        background: linear-gradient(115deg, #1f3b8a 0%, #2d4c98 35%, #3b5ea7 70%, #5c86a3 100%);
+        display:flex; align-items:center; justify-content:flex-start;
+        padding-left: clamp(18px, 6vw, 60px);
+      }
+      .hero::after { content:''; position:absolute; inset:0;
+        background: radial-gradient(80% 60% at 20% 0%, rgba(255,255,255,.14), transparent 60%);
+        pointer-events:none;
+      }
+      .hero-inner { position:relative; z-index:1; max-width: 90%; }
+      .hero-kicker {
+        font-size: clamp(12px, 2.6vw, 14px); letter-spacing:.12em; text-transform:uppercase;
+        color: rgba(255,255,255,.8); font-weight:700; margin-bottom: 6px;
+        text-shadow: 0 2px 12px rgba(0,0,0,.35);
+      }
+      .hero-title {
+        font-weight: 900;
+        font-size: clamp(22px, 5.6vw, 40px);
+        letter-spacing: -0.02em;
+        text-shadow: 0 3px 18px rgba(0,0,0,.35);
+      }
+      .pad { padding: 18px 18px 22px; }
+      .title { font-size: clamp(20px, 4.5vw, 28px); font-weight: 800; letter-spacing: -0.3px; }
+      .subtitle { font-size: clamp(13px, 3.5vw, 16px); opacity: .8; margin-top: 8px; }
+      .footer { display:flex; gap:12px; margin-top:20px; flex-wrap:wrap; }
+      .btn { background:var(--accent); color:#fff; padding: 12px 16px; border-radius: 12px; text-decoration:none; font-weight:800; display:inline-block; }
+      .btn.secondary { background:#0e1016; border:1px solid var(--line); color:#dbe8ff; }
+      .btn:hover { filter: brightness(1.05); }
+      @media (max-width: 600px) {
+        .footer { flex-direction: column; }
+        .btn { width: 100%; text-align:center; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <div class="hero">
+          <div class="hero-inner">
+            <div class="hero-kicker">티니핑 MBTI</div>
+            <div class="hero-title">차차핑 (ESFP)</div>
+          </div>
+        </div>
+        <div class="pad">
+          <div class="title">차차핑 (ESFP)</div>
+          <div class="subtitle">티니핑 MBTI 유형테스트 (비공식)</div>
+          <div class="footer">
+            <a class="btn" href="/tinyping/result/ESFP">결과 자세히 보기</a>
+            <a class="btn secondary" href="/">테스트 다시 하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
