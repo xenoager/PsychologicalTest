@@ -323,6 +323,168 @@
       "badge": "덕력",
       "author": "유형테스트",
       "image": "/og/le-sserafim-fandom.svg"
+    },
+    {
+      "slug": "sleep-quality",
+      "title": "수면의 질 간이검사",
+      "subtitle": "리듬·숙면·회복감",
+      "category": "라이프스타일",
+      "badge": "수면",
+      "author": "유형테스트",
+      "image": "/og/sleep-quality.svg"
+    },
+    {
+      "slug": "resilience-index",
+      "title": "회복탄력성 지수",
+      "subtitle": "스트레스 후 회복력",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/resilience-index.svg"
+    },
+    {
+      "slug": "burnout-risk",
+      "title": "번아웃 위험도 체크",
+      "subtitle": "소진 신호 점검",
+      "category": "커리어",
+      "badge": "스트레스",
+      "author": "유형테스트",
+      "image": "/og/burnout-risk.svg"
+    },
+    {
+      "slug": "emotion-regulation",
+      "title": "감정조절 전략 프로파일",
+      "subtitle": "재해석·표현·자기돌봄",
+      "category": "라이프스타일",
+      "badge": "자기관리",
+      "author": "유형테스트",
+      "image": "/og/emotion-regulation.svg"
+    },
+    {
+      "slug": "communication-style",
+      "title": "대인 소통 스타일 체크",
+      "subtitle": "경청·표현·갈등대처",
+      "category": "커리어",
+      "badge": "소통",
+      "author": "유형테스트",
+      "image": "/og/communication-style.svg"
+    },
+    {
+      "slug": "perfectionism-check",
+      "title": "완벽주의 경향 체크",
+      "subtitle": "기준·오류 민감도",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/perfectionism.svg"
+    },
+    {
+      "slug": "smartphone-balance",
+      "title": "스마트폰 사용 균형 체크",
+      "subtitle": "집중·수면·관계",
+      "category": "라이프스타일",
+      "badge": "습관",
+      "author": "유형테스트",
+      "image": "/og/smartphone-balance.svg"
+    },
+    {
+      "slug": "empathy-index",
+      "title": "공감능력 지수",
+      "subtitle": "경청·정서·행동 공감",
+      "category": "라이프스타일",
+      "badge": "소통",
+      "author": "유형테스트",
+      "image": "/og/empathy-index.svg"
+    },
+    {
+      "slug": "message-tone-color",
+      "title": "메시지 톤 컬러",
+      "subtitle": "내 말투의 색감 찾기",
+      "category": "라이프스타일",
+      "badge": "소통",
+      "author": "유형테스트",
+      "image": "/og/message-tone-color.svg"
+    },
+    {
+      "slug": "intuition-ping",
+      "title": "직감 ‘핑’ 지수",
+      "subtitle": "직감 vs 분석의 균형",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/intuition-ping.svg"
+    },
+    {
+      "slug": "aura-spectrum",
+      "title": "아우라 스펙트럼",
+      "subtitle": "나의 분위기 에너지",
+      "category": "엔터테인먼트",
+      "badge": "아우라",
+      "author": "유형테스트",
+      "image": "/og/aura-spectrum.svg"
+    },
+    {
+      "slug": "destiny-animal",
+      "title": "운명의 동물",
+      "subtitle": "나를 닮은 동물 찾기",
+      "category": "엔터테인먼트",
+      "badge": "동물",
+      "author": "유형테스트",
+      "image": "/og/destiny-animal.svg"
+    },
+    {
+      "slug": "love-style-spectrum",
+      "title": "연애 성향 스펙트럼",
+      "subtitle": "표현·애착·주도 밸런스",
+      "category": "연애&결혼",
+      "badge": "연애",
+      "author": "유형테스트",
+      "image": "/og/love-style-spectrum.svg"
+    },
+    {
+      "slug": "marriage-readiness",
+      "title": "결혼 준비 지수",
+      "subtitle": "합의·재정·생활 루틴",
+      "category": "연애&결혼",
+      "badge": "결혼",
+      "author": "유형테스트",
+      "image": "/og/marriage-readiness.svg"
+    },
+    {
+      "slug": "ideal-type-male",
+      "title": "이상형 스타일 (남성편)",
+      "subtitle": "돌봄·재미·안정·자유",
+      "category": "연애&결혼",
+      "badge": "이상형",
+      "author": "유형테스트",
+      "image": "/og/ideal-type-male.svg"
+    },
+    {
+      "slug": "dating-lead-spectrum",
+      "title": "연애 리드/대응 스펙트럼",
+      "subtitle": "주도성·배려 밸런스",
+      "category": "연애&결혼",
+      "badge": "연애",
+      "author": "유형테스트",
+      "image": "/og/dating-lead-spectrum.svg"
+    },
+    {
+      "slug": "dating-strategy",
+      "title": "연애 공략법",
+      "subtitle": "첫 만남→유지 전략",
+      "category": "연애&결혼",
+      "badge": "팁",
+      "author": "유형테스트",
+      "image": "/og/dating-strategy.svg"
+    },
+    {
+      "slug": "ideal-type-female",
+      "title": "이상형 스타일 (여성편)",
+      "subtitle": "돌봄·재미·안정·자유",
+      "category": "연애&결혼",
+      "badge": "이상형",
+      "author": "유형테스트",
+      "image": "/og/ideal-type-female.svg"
     }
   ]
 }

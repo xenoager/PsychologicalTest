@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#d1fae5" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#g)" />
+  <g opacity="0.08">
+    <circle cx="220" cy="120" r="90" fill="#ffffff"/>
+    <circle cx="320" cy="520" r="120" fill="#ffffff"/>
+    <circle cx="560" cy="80" r="70" fill="#ffffff"/>
+  </g>
+  <g><g fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"><rect x="820" y="250" width="220" height="140" rx="20"/><path d="M850 330l40-40 30 30 50-50"/></g></g>
+  <g fill="#ffffff">
+    <text x="120" y="300" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="64" font-weight="700">연애 공략법</text>
+    <text x="120" y="370" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="28" opacity="0.9">첫 만남→유지 전략</text>
+  </g>
+</svg>

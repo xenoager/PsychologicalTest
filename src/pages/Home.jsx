@@ -1,6 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Card from "../components/Card.jsx";
 
+/**
+ * Home.jsx (with category counts)
+ * - 기존 레이아웃/클래스명을 유지합니다 (.wrap .panel .grid .sidebar .kicker .category .cat .main .section .cards)
+ * - 좌측 카테고리 버튼에 "이름(개수)" 형태로 개수를 표시합니다.
+ * - 개수는 "검색어"가 적용된 현재 결과 기준으로 계산됩니다. (검색 중에 동적으로 업데이트)
+ * - 카탈로그는 /catalog.json에서 가져오며, categories 배열이 없을 경우 items의 category로 생성합니다.
+ */
 export default function Home() {
   const [catalog, setCatalog] = useState({ items: [], categories: [] });
   const [q, setQ] = useState("");
@@ -10,72 +17,105 @@ export default function Home() {
   useEffect(() => {
     fetch("/catalog.json")
       .then((r) => r.json())
-      .then(setCatalog);
+      .then((data) => {
+        setCatalog(data || { items: [], categories: [] });
+      })
+      .catch(() => setCatalog({ items: [], categories: [] }));
   }, []);
 
-  // 필터링된 목록
+  // 카테고리 원본
+  const categoryList = useMemo(() => {
+    const base =
+      (catalog && Array.isArray(catalog.categories) && catalog.categories.length
+        ? catalog.categories
+        : Array.from(
+            new Set(
+              (catalog.items || []).map((i) => i.category).filter(Boolean)
+            )
+          )) || [];
+    return ["전체", ...base];
+  }, [catalog]);
+
+  // 검색 토큰
+  const tokens = useMemo(
+    () => q.toLowerCase().trim().split(/\s+/).filter(Boolean),
+    [q]
+  );
+
+  // 아이템 매칭
+  const match = (item) => {
+    if (!tokens.length) return true;
+    const hay = [
+      item.title,
+      item.subtitle,
+      item.category,
+      item.badge,
+      item.author,
+      item.slug,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+    return tokens.every((t) => hay.includes(t));
+  };
+
+  // 검색이 적용된 전체 아이템
+  const filteredBySearch = useMemo(() => {
+    const arr = Array.isArray(catalog.items) ? catalog.items : [];
+    return arr.filter(match);
+  }, [catalog, tokens]);
+
+  // 카테고리별 개수(검색 적용)
+  const counts = useMemo(() => {
+    const map = Object.fromEntries(categoryList.map((c) => [c, 0]));
+    map["전체"] = filteredBySearch.length;
+    for (const it of filteredBySearch) {
+      const c = it.category || "기타";
+      if (map[c] == null) map[c] = 0;
+      map[c]++;
+    }
+    return map;
+  }, [categoryList, filteredBySearch]);
+
+  // 실제 표시 목록(검색 + 카테고리)
   const items = useMemo(() => {
-    let arr = Array.isArray(catalog.items) ? catalog.items : [];
-    if (cat && cat !== "전체") arr = arr.filter((i) => i.category === cat);
-    if (q.trim()) {
-      const t = q.trim().toLowerCase();
-      arr = arr.filter((i) =>
-        (String(i.title) + " " + String(i.subtitle || "")).toLowerCase().includes(t)
-      );
+    let base = filteredBySearch;
+    if (cat && cat !== "전체") {
+      base = base.filter((i) => i.category === cat);
     }
-    return arr;
-  }, [catalog, q, cat]);
+    return base;
+  }, [filteredBySearch, cat]);
 
-  // 카테고리 목록
-  const cats = useMemo(() => ["전체", ...(catalog.categories || [])], [catalog]);
-
-  // --- 카테고리 복원/저장 (Home에서만 관리) ---
+  // 상세에서 뒤로 오면 스크롤 복원(최소 기능)
   useEffect(() => {
-    try {
-      const saved = sessionStorage.getItem("ps:quiz-list:category");
-      if (saved && saved !== cat) setCat(saved);
-    } catch {}
-    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-  }, []);
-
-  useEffect(() => {
-    try {
-      sessionStorage.setItem("ps:quiz-list:category", cat);
-    } catch {}
-  }, [cat]);
-
-  // --- 스크롤 복원: 목록이 충분히 렌더된 뒤 1회만 수행 ---
-  useEffect(() => {
-    const need = sessionStorage.getItem("ps:quiz-list:need") === "1";
+    const ss = typeof window !== "undefined" ? window.sessionStorage : null;
+    if (!ss) return;
+    const need = ss.getItem("ps:quiz-list:need") === "1";
     if (!need) return;
-
-    const raw = sessionStorage.getItem("ps:quiz-list:scroll");
-    const y = raw ? parseInt(raw, 10) : 0;
-    if (!y) {
-      sessionStorage.removeItem("ps:quiz-list:need");
-      return;
-    }
-
+    ss.removeItem("ps:quiz-list:need");
+    const sc = parseInt(ss.getItem("ps:quiz-list:scroll") || "0", 10);
+    const savedCat = ss.getItem("ps:quiz-list:category");
+    if (savedCat) setCat(savedCat);
+    // 목록이 렌더링될 때까지 몇 프레임 기다렸다가 스크롤
     let tries = 0;
-    const maxTries = 120; // 최대 ~2초 (60fps 기준)
     const tick = () => {
-      tries += 1;
-      // 페이지 높이가 복원 위치 이상으로 충분히 그려졌는지 확인
-      const ready =
-        (document.documentElement.scrollHeight - window.innerHeight) >= (y - 4);
-      if (ready) {
-        window.scrollTo(0, y);
-        sessionStorage.removeItem("ps:quiz-list:need");
-      } else if (tries < maxTries) {
-        requestAnimationFrame(tick);
+      tries++;
+      if (tries > 20 || document.querySelectorAll(".card").length >= 1) {
+        window.scrollTo(0, sc);
       } else {
-        // 마지막 보루
-        window.scrollTo(0, y);
-        sessionStorage.removeItem("ps:quiz-list:need");
+        requestAnimationFrame(tick);
       }
     };
     requestAnimationFrame(tick);
-  }, [items.length, cat]);
+  }, [filteredBySearch.length]);
+
+  // 카테고리 클릭 시 세션에 저장(스크롤 복원과 함께 사용됨)
+  const onClickCat = (c) => {
+    setCat(c);
+    try {
+      window.sessionStorage.setItem("ps:quiz-list:category", c);
+    } catch {}
+  };
 
   return (
     <div className="wrap">
@@ -98,35 +138,39 @@ export default function Home() {
                 aria-label="검색어 지우기"
                 onClick={() => setQ("")}
               >
-                ×
+                ✕
               </button>
             )}
           </div>
         </div>
 
         <div className="grid">
+          {/* Sidebar */}
           <aside className="sidebar">
-            <div className="kicker">Category</div>
-            <div className="category">
-              {cats.map((c) => (
+            <div className="kicker">CATEGORY</div>
+            <nav className="category" aria-label="카테고리">
+              {categoryList.map((c) => (
                 <button
                   key={c}
-                  type="button"
-                  className={`cat ${cat === c ? "active" : ""}`}
-                  onClick={() => setCat(c)}
+                  className={`cat${cat === c ? " active" : ""}`}
+                  onClick={() => onClickCat(c)}
                 >
                   {c}
+                  {typeof counts[c] === "number" ? `(${counts[c]})` : ""}
                 </button>
               ))}
-            </div>
+            </nav>
           </aside>
 
+          {/* Main */}
           <main className="main">
             <section className="section">
-              <h2>{cat === "전체" ? "추천" : cat}</h2>
+              <h2>{cat}</h2>
               <div className="cards">
                 {items.length === 0 ? (
-                  <div className="empty">검색/필터 조건에 맞는 결과가 없어요.</div>
+                  <div className="empty">
+                    검색/필터 조건에 맞는 결과가 없어요.
+                  </div>
                 ) : (
                   items.map((item) => <Card key={item.slug} item={item} />)
                 )}
