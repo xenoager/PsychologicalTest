@@ -1,51 +1,14 @@
+// vite.config.ts
 import { defineConfig } from "vite";
-import fs from "fs";
-import path from "path";
-
-function shareDirRedirect() {
-  const make = (publicDir) => (req, res, next) => {
-    try {
-      const orig = req.url || "/";
-      const pathname = orig.split("?")[0];
-      if (pathname.startsWith("/share/") && !pathname.endsWith("/")) {
-        const target = path.join(publicDir, pathname);
-        if (fs.existsSync(target) && fs.statSync(target).isDirectory()) {
-          const qs = orig.includes("?") ? orig.slice(orig.indexOf("?")) : "";
-          res.statusCode = 301;
-          res.setHeader("Location", pathname + "/" + qs);
-          return res.end();
-        }
-      }
-    } catch {}
-    next();
-  };
-  return {
-    name: "share-dir-redirect",
-    configureServer(server) {
-      server.middlewares.use(make(server.config.publicDir));
-    },
-    configurePreviewServer(server) {
-      server.middlewares.use(make(server.config.publicDir));
-    },
-  };
-}
-
-const allowed = [
-  "localhost",
-  "127.0.0.1",
-  // 당신의 Koyeb 서비스 도메인: 필요 시 여기에 추가하세요.
-  "https://graceful-harrietta-kaionos-1579b421.koyeb.app",
-];
 
 export default defineConfig({
-  base: "/",
-  server: { host: true, port: 5173 },
-  preview: {
-    host: true,
-    port: process.env.PORT ? Number(process.env.PORT) : 8000,
-    strictPort: true,
-    allowedHosts: allowed,
+  server: {
+    // 개발 서버에서 접근할 일이 있다면 같이 넣어두면 편합니다.
+    allowedHosts: ["graceful-harrietta-kaionos-1579b421.koyeb.app"],
   },
-  plugins: [shareDirRedirect()],
-  build: { outDir: "dist" },
+  preview: {
+    host: true, // 0.0.0.0 리슨 (컨테이너/PAAS 필수)
+    port: Number(process.env.PORT) || 4173, // Koyeb의 PORT 환경변수 사용
+    allowedHosts: ["graceful-harrietta-kaionos-1579b421.koyeb.app"],
+  },
 });
