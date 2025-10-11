@@ -75,6 +75,7 @@ export default function Quiz() {
     };
   }, [slug]);
 
+  
   function normalizeQuiz(raw) {
     const list = Array.isArray(raw?.questions)
       ? raw.questions
@@ -100,11 +101,23 @@ export default function Quiz() {
         choice: o.choice,
         score_map: o.score_map,
       }));
-      return { id, title, options };
+
+      // === 중요: 정답 인덱스/설명 등 원본 필드 보존 ===
+      const correct_index =
+        (typeof q.correct_index === "number" ? q.correct_index : null) ??
+        (typeof q.correctIndex === "number" ? q.correctIndex : null) ??
+        (typeof q.answer_index === "number" ? q.answer_index : null) ??
+        (typeof q.answerIndex === "number" ? q.answerIndex : null);
+
+      const explain = q.explain ?? q.explanation ?? q.reason ?? "";
+      const image = q.image ?? q.img ?? null;
+
+      return { id, title, options, correct_index, explain, image };
     });
     const scoring = raw?.scoring || { engine: raw?.engine || "mbti" };
     return { ...raw, questions, scoring };
   }
+
 
   const questions = quiz?.questions || [];
   const q = questions[index];
