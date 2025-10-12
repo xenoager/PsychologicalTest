@@ -75,7 +75,6 @@ export default function Quiz() {
     };
   }, [slug]);
 
-  
   function normalizeQuiz(raw) {
     const list = Array.isArray(raw?.questions)
       ? raw.questions
@@ -117,7 +116,6 @@ export default function Quiz() {
     const scoring = raw?.scoring || { engine: raw?.engine || "mbti" };
     return { ...raw, questions, scoring };
   }
-
 
   const questions = quiz?.questions || [];
   const q = questions[index];
@@ -187,10 +185,47 @@ export default function Quiz() {
     if (index > 0) setIndex(index - 1);
   }
 
+  // --- NEW: 메인 '마인드Q' 버튼 동작 (초기 홈: 전체 + 스크롤 최상단) ---------
+  function goInitialHome() {
+    try {
+      sessionStorage.removeItem("ps:quiz-list:need");
+      sessionStorage.setItem("last-cat:/", "전체");
+      sessionStorage.setItem("ps:quiz-list:cat", "전체");
+      sessionStorage.setItem("ps:quiz-list:q", "");
+      sessionStorage.setItem("scroll-pos:/", "0");
+      sessionStorage.setItem("scroll-pos-ts:/", String(Date.now()));
+    } catch {}
+    try { window.scrollTo(0, 0); } catch {}
+    nav("/", { replace: true });
+  }
+
   if (loading)
     return (
       <div className="wrap">
-        <div className="card">로딩 중…</div>
+        <div className="card">
+          <div
+            className="header"
+            style={{
+              marginBottom: 14,
+              paddingBottom: 10,
+              borderBottom: "1px solid rgba(255,255,255,.12)",
+            }}
+          >
+            <div
+              className="logo"
+              role="button"
+              tabIndex={0}
+              aria-label="마인드Q 홈"
+              onClick={goInitialHome}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") goInitialHome();
+              }}
+            >
+              <b className="brand">마인드Q</b>
+            </div>
+          </div>
+          <div>로딩 중…</div>
+        </div>
       </div>
     );
 
@@ -199,11 +234,34 @@ export default function Quiz() {
     return (
       <div className="wrap">
         <div className="card" style={{ maxWidth: 880 }}>
-          <div className="topbar">
+          <div
+            className="header"
+            style={{
+              marginBottom: 14,
+              paddingBottom: 10,
+              borderBottom: "1px solid rgba(255,255,255,.12)",
+            }}
+          >
+            <div
+              className="logo"
+              role="button"
+              tabIndex={0}
+              aria-label="마인드Q 홈"
+              onClick={goInitialHome}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") goInitialHome();
+              }}
+            >
+              <b className="brand">마인드Q</b>
+            </div>
+          </div>
+
+          <div className="topbar" style={{ marginTop: 12 }}>
             <button className="btn ghost" onClick={() => nav("/")}>
               ← 홈으로
             </button>
           </div>
+
           <div className="kicker">로딩 오류</div>
           <div style={{ color: "#9fb6d1", marginBottom: 8 }}>
             퀴즈 파일을 불러오지 못했습니다.
@@ -221,14 +279,60 @@ export default function Quiz() {
   if (!quiz)
     return (
       <div className="wrap">
-        <div className="card">퀴즈를 찾을 수 없습니다.</div>
+        <div className="card">
+          <div
+            className="header"
+            style={{
+              marginBottom: 14,
+              paddingBottom: 10,
+              borderBottom: "1px solid rgba(255,255,255,.12)",
+            }}
+          >
+            <div
+              className="logo"
+              role="button"
+              tabIndex={0}
+              aria-label="마인드Q 홈"
+              onClick={goInitialHome}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") goInitialHome();
+              }}
+            >
+              <b className="brand">마인드Q</b>
+            </div>
+          </div>
+          퀴즈를 찾을 수 없습니다.
+        </div>
       </div>
     );
 
   return (
     <div className="wrap">
       <div className="card" style={{ width: "100%", maxWidth: 880 }}>
-        <div className="topbar">
+        {/* NEW: 메인 '마인드Q' 버튼을 홈으로 위쪽(최상단)에 배치 + 구분선/간격 추가 */}
+        <div
+          className="header"
+          style={{
+            marginBottom: 14,
+            paddingBottom: 10,
+            borderBottom: "1px solid rgba(255,255,255,.12)",
+          }}
+        >
+          <div
+            className="logo"
+            role="button"
+            tabIndex={0}
+            aria-label="마인드Q 홈"
+            onClick={goInitialHome}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") goInitialHome();
+            }}
+          >
+            <b className="brand">마인드Q</b>
+          </div>
+        </div>
+
+        <div className="topbar" style={{ marginTop: 12 }}>
           <button className="btn ghost" onClick={() => nav("/")}>
             ← 홈으로
           </button>

@@ -14,15 +14,114 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/safe-area.css" />
     <script defer src="/scroll-keeper.js"></script>
+    <style>
+      /* --- Route transition overlay (lightweight) --------------------------- */
+      #route-loading {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 2147483646;
+        background: rgba(0, 0, 0, 0.28);
+        -webkit-backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(1.5px);
+      }
+      #route-loading.active { display: flex; }
+      #route-loading .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 14px;
+        background: rgba(17, 17, 17, 0.85);
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 0 2px 10px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+      }
+      #route-loading .spinner {
+        width: 20px; height: 20px;
+        border-radius: 999px;
+        border: 3px solid rgba(255,255,255,.25);
+        border-top-color: #fff;
+        animation: route-spin .8s linear infinite;
+      }
+      @keyframes route-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        #route-loading .spinner { animation: none; border: 3px solid #fff; }
+      }
+      /* 클릭가능하게 보이도록(선택) */
+      .logo { cursor: pointer; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- [ADD] '홈으로'를 '이전'처럼 동작시키는 전역 델리게이트 스크립트 -->
+    <!-- [A0] 좌측 '마인드Q' 로고 클릭 시: 전체 카테고리 + 최상단(0) 초기화면으로 이동 -->
+    <script>
+      (function () {
+        function goInitialHome(ev) {
+          try {
+            // 복원 비활성화
+            sessionStorage.removeItem("ps:quiz-list:need");
+            // 초기 카테고리/검색 고정
+            sessionStorage.setItem("last-cat:/", "전체");
+            sessionStorage.setItem("ps:quiz-list:cat", "전체");
+            sessionStorage.setItem("ps:quiz-list:q", "");
+            // 홈(/) 스크롤을 0으로 선기록하여 전환 직후 상단 유지
+            sessionStorage.setItem("scroll-pos:/", "0");
+            sessionStorage.setItem("scroll-pos-ts:/", String(Date.now()));
+          } catch (e) {}
+          if (ev) {
+            if (typeof ev.preventDefault === "function") ev.preventDefault();
+            if (typeof ev.stopPropagation === "function") ev.stopPropagation();
+            if (typeof ev.stopImmediatePropagation === "function")
+              ev.stopImmediatePropagation();
+          }
+          try { window.scrollTo(0, 0); } catch (e) {}
+          // SPA/Non-SPA 모두 안전하게 처리
+          try {
+            // 히스토리 추가 없이 초기화면으로
+            window.location.replace("/");
+          } catch (e) {
+            window.location.href = "/";
+          }
+        }
+
+        // 캡처 단계에서 가장 먼저 가로채어 Back-델리게이트보다 우선 적용
+        document.addEventListener(
+          "click",
+          function (e) {
+            if (
+              e.button !== 0 ||
+              e.metaKey ||
+              e.ctrlKey ||
+              e.shiftKey ||
+              e.altKey
+            ) {
+              return;
+            }
+            var el =
+              e.target &&
+              e.target.closest &&
+              e.target.closest('[data-home-root], .logo, .logo .brand');
+            if (!el) return;
+            goInitialHome(e);
+          },
+          true
+        );
+      })();
+    </script>
+
+    <!-- [A] '홈으로'를 '이전'처럼 동작시키는 전역 델리게이트 스크립트 -->
     <script>
       (function () {
         function isHomeCandidate(el) {
           if (!el) return false;
+          // [중요] 초기화 전용 타깃은 제외
+          if (el.closest && el.closest("[data-home-root], .logo, .logo .brand")) {
+            return false;
+          }
           var tag = (el.tagName || "").toUpperCase();
           if (tag === "A") {
             var href = el.getAttribute("href") || "";
@@ -99,6 +198,66 @@
           },
           true
         );
+      })();
+    </script>
+
+    <!-- [B] SPA 라우트 전환 시, 현재 화면 위에 '로딩 중' 오버레이를 잠깐만 표시 -->
+    <script>
+      (function () {
+        var SHOW_DELAY = 100;   // 전환이 100ms 이상 걸릴 때만 띄움(짧은 전환은 깜빡임 방지)
+        var MIN_SHOW   = 180;   // 최소 표시 시간 (너무 빨리 사라져도 깜빡임)
+        var MAX_FALLBK = 1000;  // 최장 표시(비정상 상황 대비)
+        var root = document.getElementById("root");
+
+        // 오버레이 DOM 구성
+        var overlay = document.createElement("div");
+        overlay.id = "route-loading";
+        overlay.setAttribute("aria-hidden", "true");
+        overlay.innerHTML =
+          '<div class="pill"><div class="spinner" aria-hidden="true"></div><div>로딩 중…</div></div>';
+        document.body.appendChild(overlay);
+
+        var showTimer = null, hideTimer = null, startAt = 0;
+
+        function show() {
+          if (overlay.classList.contains("active")) return;
+          overlay.classList.add("active");
+          overlay.setAttribute("aria-hidden", "false");
+          startAt = performance.now();
+          // 비정상 장시간 표시 방지
+          clearTimeout(hideTimer);
+          hideTimer = setTimeout(hide, MAX_FALLBK);
+        }
+        function hide() {
+          clearTimeout(hideTimer);
+          if (!overlay.classList.contains("active")) return;
+          var elapsed = performance.now() - startAt;
+          var wait = elapsed < MIN_SHOW ? MIN_SHOW - elapsed : 0;
+          setTimeout(function () {
+            overlay.classList.remove("active");
+            overlay.setAttribute("aria-hidden", "true");
+          }, wait);
+        }
+        function bump() {
+          clearTimeout(showTimer);
+          showTimer = setTimeout(show, SHOW_DELAY);
+        }
+
+        // 전환 시작 시점을 포착
+        var origPush = history.pushState;
+        var origReplace = history.replaceState;
+        history.pushState = function () { bump(); return origPush.apply(this, arguments); };
+        history.replaceState = function () { bump(); return origReplace.apply(this, arguments); };
+        window.addEventListener("popstate", bump, true);
+
+        // #root 이하에 변경(=새 화면 렌더) 발생하면 다음 페인트 이후 숨김
+        var mo = new MutationObserver(function () {
+          if (!overlay.classList.contains("active")) return;
+          requestAnimationFrame(function(){ requestAnimationFrame(hide); });
+        });
+        if (root) {
+          mo.observe(root, { childList: true, subtree: true });
+        }
       })();
     </script>
 

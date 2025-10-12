@@ -392,8 +392,46 @@ export default function Result() {
     }
   }
 
+  // --- NEW: 메인 '마인드Q' 버튼 동작 (초기 홈: 전체 + 스크롤 최상단) ---------
+  function goInitialHome() {
+    try {
+      sessionStorage.removeItem("ps:quiz-list:need");
+      sessionStorage.setItem("last-cat:/", "전체");
+      sessionStorage.setItem("ps:quiz-list:cat", "전체");
+      sessionStorage.setItem("ps:quiz-list:q", "");
+      sessionStorage.setItem("scroll-pos:/", "0");
+      sessionStorage.setItem("scroll-pos-ts:/", String(Date.now()));
+    } catch {}
+    try { window.scrollTo(0, 0); } catch {}
+    nav("/", { replace: true });
+  }
+
+  const HeaderBrand = (
+    <div
+      className="header header--brand"
+      style={{
+        marginBottom: 14,
+        paddingBottom: 10,
+        borderBottom: "1px solid rgba(255,255,255,.12)",
+      }}
+    >
+      <div
+        className="logo"
+        role="button"
+        tabIndex={0}
+        aria-label="마인드Q 홈"
+        onClick={goInitialHome}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") goInitialHome();
+        }}
+      >
+        <b className="brand">마인드Q</b>
+      </div>
+    </div>
+  );
+
   const TopBar = (
-    <div className="topbar">
+    <div className="topbar" style={{ marginTop: 12 }}>
       <button className="btn ghost" onClick={() => nav("/")}>
         ← 홈으로
       </button>
@@ -411,6 +449,7 @@ export default function Result() {
     return (
       <div className="wrap">
         <div className="card" style={{ width: "100%", maxWidth: 880 }}>
+          {HeaderBrand}
           {TopBar}
           <div>결과를 불러오는 중…</div>
         </div>
@@ -422,6 +461,7 @@ export default function Result() {
     return (
       <div className="wrap">
         <div className="card" style={{ width: "100%", maxWidth: 880 }}>
+          {HeaderBrand}
           {TopBar}
           <div className="kicker">알림</div>
           <div style={{ color: "#9fb6d1", marginBottom: 8 }}>
@@ -441,6 +481,7 @@ export default function Result() {
   return (
     <div className="wrap">
       <div className="card" style={{ width: "100%", maxWidth: 880 }}>
+        {HeaderBrand}
         {TopBar}
 
         <div className="result-head">
@@ -519,7 +560,7 @@ export default function Result() {
                 </div>
               </div>
             )}
-            {picked.bad_match?.length > 0 && (
+            {picked.bad_match?.length> 0 && (
               <div className="result-card">
                 <h4>주의할 궁합</h4>
                 <div className="pills">
