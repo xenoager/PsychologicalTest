@@ -1,51 +1,59 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { assetUrl } from "../utils/asset.js";
 
-export default function Card({ item }) {
+/**
+ * Card.jsx (v2) — 클릭 직전 스크롤 저장 (카테고리/검색 키 동시 저장)
+ */
+export default function Card({ item, activeCat, q }) {
   const nav = useNavigate();
-  const cover =
-    item.image || item.thumbnail || item.thumb || item.cover || null;
+  const location = useLocation();
+  const cover = item.image || item.thumbnail || item.thumb || item.cover || null;
+
+  function buildSearch(c, query) {
+    const parts = [];
+    if (c && c !== "전체") parts.push("cat=" + encodeURIComponent(c));
+    if (query) parts.push("q=" + encodeURIComponent(query));
+    return parts.join("&");
+  }
+
+  function handleClick() {
+    try {
+      const y = window.scrollY || window.pageYOffset || 0;
+      const runtimeKey = location.pathname + location.search;  // 현재 URL 기준
+      const stateKey = "/" + (buildSearch(activeCat, q) ? "?" + buildSearch(activeCat, q) : "");
+      const stateKeyNoQ = "/" + (buildSearch(activeCat, "") ? "?" + buildSearch(activeCat, "") : "");
+      const keys = Array.from(new Set([runtimeKey, stateKey, stateKeyNoQ, "/"]));
+      const now = String(Date.now());
+      for (const k of keys) {
+        sessionStorage.setItem("scroll-pos:" + k, String(y));
+        sessionStorage.setItem("scroll-pos-ts:" + k, now);
+      }
+      sessionStorage.setItem("ps:quiz-list:need", "1");
+      // 선택 카테고리 보존
+      if (activeCat) sessionStorage.setItem("last-cat:/", activeCat);
+    } catch {}
+    nav("/" + item.slug);
+  }
+
   return (
-    <div className="card" role="button" onClick={() => { try { sessionStorage.setItem("ps:quiz-list:scroll", String(window.scrollY||0)); sessionStorage.setItem("ps:quiz-list:need","1"); } catch {}; nav("/" + item.slug); }}>
+    <div className="card" role="button" onClick={handleClick}>
       <div
         className="thumb"
         style={{
           position: "relative",
           overflow: "hidden",
-          background:
-            item.gradient ||
-            "linear-gradient(120deg,#1f3b8a 0%,#2d4c98 35%,#3b5ea7 70%,#5c86a3 100%)",
+          background: "#0f131b",
+          backgroundImage: cover ? `url(${assetUrl(cover)})` : "none",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           borderRadius: 16,
         }}
-      >
-        {cover && (
-          <img
-            src={assetUrl(cover)}
-            alt=""
-            aria-hidden="true"
-            loading="lazy"
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              zIndex: 0,
-            }}
-            onError={(e) => {
-              e.currentTarget.style.display = "none";
-            }}
-          />
-        )}
-        {/* 절대배치는 CSS(.thumb .label)에서 처리 → 여기서는 zIndex만 */}
-        <div className="label" style={{ zIndex: 1 }}>
-          {item.badge || "TEST"}
-        </div>
-      </div>
+        aria-label={item.title}
+      />
       <div className="meta">
         <div className="title">{item.title}</div>
-        <div className="sub">{item.subtitle}</div>
+        {item.subtitle && <div className="sub">{item.subtitle}</div>}
       </div>
       <div className="footer">
         <span className="badge">{item.category}</span>
