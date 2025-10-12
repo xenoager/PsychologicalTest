@@ -278,9 +278,9 @@ a {
   }
 }
 
-/* === Patch: 2025-10-01 �� UI fixes per user requests === */
+/* === Patch: 2025-10-01 — UI fixes per user requests === */
 
-/* 1) �곷떒 怨좎젙 + 寃곌낵 �곸뿭 �덉젙�� */
+/* 1) 상단 고정 + 결과 영역 안정화 */
 .header {
   position: sticky;
   top: 0;
@@ -304,7 +304,7 @@ a {
   background: rgba(255, 255, 255, 0.02);
 }
 
-/* 2) 醫뚯륫 移댄뀒怨좊━ 鍮꾪솢�� 媛��쒖꽦 媛뺥솕 */
+/* 2) 좌측 카테고리 비활성 가시성 강화 */
 .category .cat {
   width: 100%;
   text-align: left;
@@ -335,7 +335,7 @@ a {
   outline-offset: 2px;
 }
 
-/* 3) 寃��됱갹 X(�대━��) 踰꾪듉 */
+/* 3) 검색창 X(클리어) 버튼 */
 .search {
   position: relative;
 }
@@ -365,7 +365,7 @@ a {
   outline-offset: 1px;
 }
 
-/* 4) 5) �뚯뒪�� �붾㈃ �겶룻븯쨌醫뙿룹슦 �щ갚 + �곷떒 �덉쑝濡� 踰꾪듉 �곸뿭 */
+/* 4) 5) 테스트 화면 상·하·좌·우 여백 + 상단 홈으로 버튼 영역 */
 .topbar {
   display: flex;
   align-items: center;
@@ -383,7 +383,7 @@ a {
 .qtitle {
   margin-bottom: 16px;
 }
-/* ��(�곷떒 �숈씪, 湲곗〈 �꾩껜 �ㅽ��� �앸왂 �놁씠 �ы븿: 踰꾪듉/移대뱶/�듭뀡/�⑥튂 ��)�� */
+/* …(상단 동일, 기존 전체 스타일 생략 없이 포함: 버튼/카드/옵션/패치 등)… */
 /* === New: Result page styles === */
 .result-head {
   margin-bottom: 8px;
@@ -477,8 +477,15 @@ a {
   z-index: 9999;
 }
 
-/* Mobile edge guard: prevent the leftmost logo chip from touching/cropping on very small or in-app browsers */
+/* Brand: '마인드Q' single wordmark, remove old '유형' chip */
+.logo .brand {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  line-height: 1;
+  display: inline-block;
+}
 @media (max-width: 640px) {
   .header { padding-left: max(0px, var(--safe-left)); }
-  .logo span { margin-left: 2px; } /* subtle buffer for rounded chip */
 }
+
