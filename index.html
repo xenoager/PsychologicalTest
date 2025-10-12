@@ -17,6 +17,91 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- [ADD] '홈으로'를 '이전'처럼 동작시키는 전역 델리게이트 스크립트 -->
+    <script>
+      (function () {
+        function isHomeCandidate(el) {
+          if (!el) return false;
+          var tag = (el.tagName || "").toUpperCase();
+          if (tag === "A") {
+            var href = el.getAttribute("href") || "";
+            try {
+              var url = new URL(href, location.href);
+              if (url.pathname === "/") return true;
+            } catch (e) {
+              if (href === "/") return true;
+            }
+            return false;
+          }
+          if (tag === "BUTTON") {
+            if (el.hasAttribute("data-home-back")) return true;
+            if (el.classList && el.classList.contains("btn-home")) return true;
+            var txt = (el.textContent || "").trim();
+            if (/홈|home/i.test(txt)) return true;
+          }
+          return false;
+        }
+
+        function goHomeLikeBack(ev) {
+          try {
+            // 홈 복귀 시 카테고리/검색 복원을 위해 신호 및 타겟 고정
+            var catWanted =
+              sessionStorage.getItem("ps:quiz-list:cat") ||
+              sessionStorage.getItem("last-cat:/") ||
+              "전체";
+            var qWanted = sessionStorage.getItem("ps:quiz-list:q") || "";
+            sessionStorage.setItem("ps:quiz-list:need", "1");
+            sessionStorage.setItem("ps:quiz-list:cat", catWanted);
+            sessionStorage.setItem("ps:quiz-list:q", qWanted);
+          } catch (e) {}
+
+          if (ev) {
+            if (typeof ev.preventDefault === "function") ev.preventDefault();
+            if (typeof ev.stopPropagation === "function") ev.stopPropagation();
+            if (typeof ev.stopImmediatePropagation === "function")
+              ev.stopImmediatePropagation();
+          }
+
+          try {
+            if (window.history.length > 1) {
+              window.history.back();
+            } else {
+              // 히스토리가 없으면 홈으로 대체
+              window.location.replace("/");
+            }
+          } catch (e) {
+            window.location.replace("/");
+          }
+        }
+
+        // 캡처 단계에서 가로채기 (컴포넌트 onClick보다 먼저 실행)
+        document.addEventListener(
+          "click",
+          function (e) {
+            // 보조키/비좌클릭은 무시
+            if (
+              e.button !== 0 ||
+              e.metaKey ||
+              e.ctrlKey ||
+              e.shiftKey ||
+              e.altKey
+            ) {
+              return;
+            }
+            var target = e.target;
+            var el = target && target.closest && target.closest("a,button");
+            if (!el) return;
+
+            if (isHomeCandidate(el)) {
+              goHomeLikeBack(e);
+            }
+          },
+          true
+        );
+      })();
+    </script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
