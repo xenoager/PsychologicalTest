@@ -27,7 +27,9 @@
         -webkit-backdrop-filter: blur(1.5px);
         backdrop-filter: blur(1.5px);
       }
-      #route-loading.active { display: flex; }
+      #route-loading.active {
+        display: flex;
+      }
       #route-loading .pill {
         display: inline-flex;
         align-items: center;
@@ -37,21 +39,32 @@
         background: rgba(17, 17, 17, 0.85);
         color: #fff;
         font-weight: 600;
-        box-shadow: 0 2px 10px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.06);
       }
       #route-loading .spinner {
-        width: 20px; height: 20px;
+        width: 20px;
+        height: 20px;
         border-radius: 999px;
-        border: 3px solid rgba(255,255,255,.25);
+        border: 3px solid rgba(255, 255, 255, 0.25);
         border-top-color: #fff;
-        animation: route-spin .8s linear infinite;
+        animation: route-spin 0.8s linear infinite;
       }
-      @keyframes route-spin { to { transform: rotate(360deg); } }
+      @keyframes route-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
       @media (prefers-reduced-motion: reduce) {
-        #route-loading .spinner { animation: none; border: 3px solid #fff; }
+        #route-loading .spinner {
+          animation: none;
+          border: 3px solid #fff;
+        }
       }
       /* 클릭가능하게 보이도록(선택) */
-      .logo { cursor: pointer; }
+      .logo {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -78,7 +91,9 @@
             if (typeof ev.stopImmediatePropagation === "function")
               ev.stopImmediatePropagation();
           }
-          try { window.scrollTo(0, 0); } catch (e) {}
+          try {
+            window.scrollTo(0, 0);
+          } catch (e) {}
           // SPA/Non-SPA 모두 안전하게 처리
           try {
             // 히스토리 추가 없이 초기화면으로
@@ -104,7 +119,7 @@
             var el =
               e.target &&
               e.target.closest &&
-              e.target.closest('[data-home-root], .logo, .logo .brand');
+              e.target.closest("[data-home-root], .logo, .logo .brand");
             if (!el) return;
             goInitialHome(e);
           },
@@ -119,7 +134,10 @@
         function isHomeCandidate(el) {
           if (!el) return false;
           // [중요] 초기화 전용 타깃은 제외
-          if (el.closest && el.closest("[data-home-root], .logo, .logo .brand")) {
+          if (
+            el.closest &&
+            el.closest("[data-home-root], .logo, .logo .brand")
+          ) {
             return false;
           }
           var tag = (el.tagName || "").toUpperCase();
@@ -134,11 +152,14 @@
             return false;
           }
           if (tag === "BUTTON") {
+            // [완화] React onClick 처리(스마트 홈 이동)와 충돌하지 않도록,
+            // 버튼 텍스트로 '홈'을 포괄 매칭하던 로직은 제거한다.
+            // 명시적으로 지정된 타깃만 전역 핸들러가 처리한다.
             if (el.hasAttribute("data-home-back")) return true;
             if (el.classList && el.classList.contains("btn-home")) return true;
-            var txt = (el.textContent || "").trim();
-            if (/홈|home/i.test(txt)) return true;
+            return false;
           }
+
           return false;
         }
 
@@ -204,9 +225,9 @@
     <!-- [B] SPA 라우트 전환 시, 현재 화면 위에 '로딩 중' 오버레이를 잠깐만 표시 -->
     <script>
       (function () {
-        var SHOW_DELAY = 100;   // 전환이 100ms 이상 걸릴 때만 띄움(짧은 전환은 깜빡임 방지)
-        var MIN_SHOW   = 180;   // 최소 표시 시간 (너무 빨리 사라져도 깜빡임)
-        var MAX_FALLBK = 1000;  // 최장 표시(비정상 상황 대비)
+        var SHOW_DELAY = 100; // 전환이 100ms 이상 걸릴 때만 띄움(짧은 전환은 깜빡임 방지)
+        var MIN_SHOW = 180; // 최소 표시 시간 (너무 빨리 사라져도 깜빡임)
+        var MAX_FALLBK = 1000; // 최장 표시(비정상 상황 대비)
         var root = document.getElementById("root");
 
         // 오버레이 DOM 구성
@@ -217,7 +238,9 @@
           '<div class="pill"><div class="spinner" aria-hidden="true"></div><div>로딩 중…</div></div>';
         document.body.appendChild(overlay);
 
-        var showTimer = null, hideTimer = null, startAt = 0;
+        var showTimer = null,
+          hideTimer = null,
+          startAt = 0;
 
         function show() {
           if (overlay.classList.contains("active")) return;
@@ -246,14 +269,22 @@
         // 전환 시작 시점을 포착
         var origPush = history.pushState;
         var origReplace = history.replaceState;
-        history.pushState = function () { bump(); return origPush.apply(this, arguments); };
-        history.replaceState = function () { bump(); return origReplace.apply(this, arguments); };
+        history.pushState = function () {
+          bump();
+          return origPush.apply(this, arguments);
+        };
+        history.replaceState = function () {
+          bump();
+          return origReplace.apply(this, arguments);
+        };
         window.addEventListener("popstate", bump, true);
 
         // #root 이하에 변경(=새 화면 렌더) 발생하면 다음 페인트 이후 숨김
         var mo = new MutationObserver(function () {
           if (!overlay.classList.contains("active")) return;
-          requestAnimationFrame(function(){ requestAnimationFrame(hide); });
+          requestAnimationFrame(function () {
+            requestAnimationFrame(hide);
+          });
         });
         if (root) {
           mo.observe(root, { childList: true, subtree: true });

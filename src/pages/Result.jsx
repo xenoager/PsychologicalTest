@@ -402,7 +402,79 @@ export default function Result() {
       sessionStorage.setItem("scroll-pos:/", "0");
       sessionStorage.setItem("scroll-pos-ts:/", String(Date.now()));
     } catch {}
-    try { window.scrollTo(0, 0); } catch {}
+    try {
+      window.scrollTo(0, 0);
+    } catch {}
+    nav("/", { replace: true });
+  }
+
+  /* ===================== NEW: 홈으로(스마트) =====================
+   * 1) 가능한 경우 pop 2단계(nav(-2))로 Home 복귀
+   * 2) 불가(인덱스 부족/딥링크) 시:
+   *    - Home 복원 신호(need/cat/q) 세팅
+   *    - '/' 로 replace 이동 → Home.jsx가 Back처럼 복원
+   */
+  function buildSearch(c, query) {
+    const parts = [];
+    if (c && c !== "전체") parts.push("cat=" + encodeURIComponent(c));
+    if (query) parts.push("q=" + encodeURIComponent(query));
+    return parts.join("&");
+  }
+  function prepareHomeResume() {
+    try {
+      const catWanted0 =
+        sessionStorage.getItem("ps:quiz-list:cat") ||
+        sessionStorage.getItem("last-cat:/") ||
+        "전체";
+      const qWanted0 = sessionStorage.getItem("ps:quiz-list:q") || "";
+
+      const makeKey = (c, query) =>
+        "/" + (buildSearch(c, query) ? "?" + buildSearch(c, query) : "");
+
+      const candidates = [
+        makeKey(catWanted0, qWanted0),
+        makeKey(catWanted0, ""),
+        "/",
+      ];
+
+      let bestKey = null;
+      let bestTs = -1;
+      for (const k of candidates) {
+        const ts = Number(sessionStorage.getItem("scroll-pos-ts:" + k) || "0");
+        if (!Number.isNaN(ts) && ts > bestTs) {
+          bestTs = ts;
+          bestKey = k;
+        }
+      }
+
+      let resumeCat = catWanted0;
+      let resumeQ = qWanted0;
+      if (bestKey && bestKey !== "/") {
+        const idx = bestKey.indexOf("?");
+        if (idx >= 0) {
+          const sp = new URLSearchParams(bestKey.slice(idx));
+          resumeCat = sp.get("cat") || "전체";
+          resumeQ = sp.get("q") || "";
+        }
+      }
+
+      sessionStorage.setItem("ps:quiz-list:need", "1");
+      sessionStorage.setItem("ps:quiz-list:cat", resumeCat);
+      sessionStorage.setItem("ps:quiz-list:q", resumeQ);
+    } catch {}
+  }
+  function goHomeSmart() {
+    // 항상 복원 신호를 먼저 세팅 (뒤로가기 시나리오에서도 스크롤/카테고리 복원 보장)
+    prepareHomeResume();
+    try {
+      const idx = window.history?.state?.idx;
+      // Home(0) -> Quiz(1) -> Result(2) 라면 -2가 가능
+      if (typeof idx === "number" && idx >= 2) {
+        nav(-2);
+        return;
+      }
+    } catch {}
+    // 딥링크/새로고침 등으로 pop 불가 → '/'로 대체
     nav("/", { replace: true });
   }
 
@@ -432,7 +504,7 @@ export default function Result() {
 
   const TopBar = (
     <div className="topbar" style={{ marginTop: 12 }}>
-      <button className="btn ghost" onClick={() => nav("/")}>
+      <button className="btn ghost" onClick={goHomeSmart}>
         ← 홈으로
       </button>
       <div style={{ flex: 1 }} />
@@ -560,7 +632,7 @@ export default function Result() {
                 </div>
               </div>
             )}
-            {picked.bad_match?.length> 0 && (
+            {picked.bad_match?.length > 0 && (
               <div className="result-card">
                 <h4>주의할 궁합</h4>
                 <div className="pills">
