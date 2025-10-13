@@ -185,7 +185,7 @@ export default function Quiz() {
     if (index > 0) setIndex(index - 1);
   }
 
-  // --- NEW: 메인 '마인드Q' 버튼 동작 (초기 홈: 전체 + 스크롤 최상단) ---------
+  // --- NEW: 메인 '마인드픽Q' 버튼 동작 (초기 홈: 전체 + 스크롤 최상단) ---------
   function goInitialHome() {
     try {
       sessionStorage.removeItem("ps:quiz-list:need");
@@ -284,13 +284,13 @@ export default function Quiz() {
               className="logo"
               role="button"
               tabIndex={0}
-              aria-label="마인드Q 홈"
+              aria-label="마인드픽Q 홈"
               onClick={goInitialHome}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") goInitialHome();
               }}
             >
-              <b className="brand">마인드Q</b>
+              <b className="brand">마인드픽Q</b>
             </div>
           </div>
           <div>로딩 중…</div>
@@ -315,13 +315,13 @@ export default function Quiz() {
               className="logo"
               role="button"
               tabIndex={0}
-              aria-label="마인드Q 홈"
+              aria-label="마인드픽Q 홈"
               onClick={goInitialHome}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") goInitialHome();
               }}
             >
-              <b className="brand">마인드Q</b>
+              <b className="brand">마인드픽Q</b>
             </div>
           </div>
 
@@ -361,13 +361,13 @@ export default function Quiz() {
               className="logo"
               role="button"
               tabIndex={0}
-              aria-label="마인드Q 홈"
+              aria-label="마인드픽Q 홈"
               onClick={goInitialHome}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") goInitialHome();
               }}
             >
-              <b className="brand">마인드Q</b>
+              <b className="brand">마인드픽Q</b>
             </div>
           </div>
           퀴즈를 찾을 수 없습니다.
@@ -378,7 +378,7 @@ export default function Quiz() {
   return (
     <div className="wrap">
       <div className="card" style={{ width: "100%", maxWidth: 880 }}>
-        {/* NEW: 메인 '마인드Q' 버튼을 홈으로 위쪽(최상단)에 배치 + 구분선/간격 추가 */}
+        {/* NEW: 메인 '마인드픽Q' 버튼을 홈으로 위쪽(최상단)에 배치 + 구분선/간격 추가 */}
         <div
           className="header"
           style={{
@@ -391,13 +391,13 @@ export default function Quiz() {
             className="logo"
             role="button"
             tabIndex={0}
-            aria-label="마인드Q 홈"
+            aria-label="마인드픽Q 홈"
             onClick={goInitialHome}
             onKeyDown={(e) => {
               if (e.key === "Enter" || e.key === " ") goInitialHome();
             }}
           >
-            <b className="brand">마인드Q</b>
+            <b className="brand">마인드픽Q</b>
           </div>
         </div>
 

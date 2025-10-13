@@ -73,7 +73,9 @@ export default function Home() {
     // 3) 상태/URL 동기화는 아래 effect가 수행
     setCat(next);
     // 4) 즉시 화면 상단으로
-    try { window.scrollTo(0, 0); } catch {}
+    try {
+      window.scrollTo(0, 0);
+    } catch {}
   }
 
   // --- 초기 상태 확정 --------------------------------------------------------
@@ -157,24 +159,19 @@ export default function Home() {
   // --- 카테고리 리스트 -------------------------------------------------------
   const categoryList = useMemo(() => {
     const base =
-      (catalog &&
-        Array.isArray(catalog.categories) &&
-        catalog.categories.length
+      (catalog && Array.isArray(catalog.categories) && catalog.categories.length
         ? catalog.categories
         : Array.from(
-            new Set((catalog.items || []).map((i) => i.category).filter(Boolean))
+            new Set(
+              (catalog.items || []).map((i) => i.category).filter(Boolean)
+            )
           )) || [];
     return ["전체", ...base];
   }, [catalog]);
 
   // --- 필터링 ----------------------------------------------------------------
   const tokens = useMemo(
-    () =>
-      (q || "")
-        .trim()
-        .toLowerCase()
-        .split(/\s+/)
-        .filter(Boolean),
+    () => (q || "").trim().toLowerCase().split(/\s+/).filter(Boolean),
     [q]
   );
 
@@ -298,7 +295,7 @@ export default function Home() {
       if (resumeCat !== cat) setCat(resumeCat);
       if (resumeQ !== q) setQ(resumeQ);
     } catch {}
-  // pathname 바뀔 때마다 체크 (앵커/새로고침 포함)
+    // pathname 바뀔 때마다 체크 (앵커/새로고침 포함)
   }, [location.pathname]);
 
   // --- [KEEP] 상세 → 홈 복귀 시, 우선 cat/q를 맞춘 뒤 복원 --------------------
@@ -403,7 +400,7 @@ export default function Home() {
       <div className="panel">
         <div className="header">
           <div className="logo">
-            <b className="brand">마인드Q</b>
+            <b className="brand">마인드픽Q</b>
           </div>
           <div className="search" role="search">
             <input
@@ -443,7 +440,9 @@ export default function Home() {
               <h2>{cat}</h2>
               <div className="cards">
                 {items.length === 0 ? (
-                  <div className="empty">검색/필터 조건에 맞는 결과가 없어요.</div>
+                  <div className="empty">
+                    검색/필터 조건에 맞는 결과가 없어요.
+                  </div>
                 ) : (
                   items.map((it) => (
                     <Card key={it.slug} item={it} activeCat={cat} q={q} />

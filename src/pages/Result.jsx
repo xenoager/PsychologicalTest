@@ -273,6 +273,13 @@ export default function Result() {
   const nav = useNavigate();
   const location = useLocation();
 
+  // 공유 보기 모드 감지 (?share=1 | true | yes)
+  const __share = new URLSearchParams(location.search).get("share");
+  const isSharedView =
+    String(__share || "").toLowerCase() === "1" ||
+    String(__share || "").toLowerCase() === "true" ||
+    String(__share || "").toLowerCase() === "yes";
+
   const [quiz, setQuiz] = useState(null);
   const [loading, setLoading] = useState(true);
   const [shareMsg, setShareMsg] = useState("");
@@ -392,7 +399,7 @@ export default function Result() {
     }
   }
 
-  // --- NEW: 메인 '마인드Q' 버튼 동작 (초기 홈: 전체 + 스크롤 최상단) ---------
+  // --- NEW: 메인 '마인드픽Q' 버튼 동작 (초기 홈: 전체 + 스크롤 최상단) ---------
   function goInitialHome() {
     try {
       sessionStorage.removeItem("ps:quiz-list:need");
@@ -491,18 +498,18 @@ export default function Result() {
         className="logo"
         role="button"
         tabIndex={0}
-        aria-label="마인드Q 홈"
+        aria-label="마인드픽Q 홈"
         onClick={goInitialHome}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") goInitialHome();
         }}
       >
-        <b className="brand">마인드Q</b>
+        <b className="brand">마인드픽Q</b>
       </div>
     </div>
   );
 
-  const TopBar = (
+  const TopBar = isSharedView ? null : (
     <div className="topbar" style={{ marginTop: 12 }}>
       <button className="btn ghost" onClick={goHomeSmart}>
         ← 홈으로
