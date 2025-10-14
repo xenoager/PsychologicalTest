@@ -7,8 +7,9 @@
     "node": ">=18"
   },
   "scripts": {
+    "rss": "node scripts/build-rss.mjs",
     "dev": "vite",
-    "build": "vite build && node scripts/build-seo.mjs",
+    "build": "vite build && node scripts/build-seo.mjs && node scripts/build-rss.mjs",
     "start": "vite preview --host 0.0.0.0 --port ${PORT:-8000}",
     "postinstall": "npm run build",
     "preview": "vite preview --host 0.0.0.0 --port ${PORT:-8000}",

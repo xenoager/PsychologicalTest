@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>마인드픽Q</title>
+    <link>https://www.mindpickq.com/</link>
+    <description>최신 심리, 연애 심리, 성격 유형, 감정 성향 테스트, 퍼스널컬러, 나의 아우라 찾기, 공감 능력 테스트 등 재미있는 테스트가 가득한 사이트 입니다.</description>
+    <language>ko</language>
+    <lastBuildDate>Tue, 14 Oct 2025 06:26:04 GMT</lastBuildDate>
+  <item>
+    <title>사교 에너지 프로필</title>
+    <link>https://www.mindpickq.com/social-energy</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/social-energy</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[대인 활동이 에너지에 미치는 영향을 점검하는 가벼운 자기이해 테스트입니다.]]></description>
+  </item>
+  <item>
+    <title>공감 표현 스타일</title>
+    <link>https://www.mindpickq.com/empathy-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/empathy-style</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[상대의 어려움을 들었을 때 당신이 주로 취하는 반응 방식을 확인합니다.]]></description>
+  </item>
+  <item>
+    <title>회복탄력성 미니 체크</title>
+    <link>https://www.mindpickq.com/resilience-mini</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/resilience-mini</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[어려움 이후 다시 일어서는 힘의 단서를 간단히 살펴봅니다.]]></description>
+  </item>
+  <item>
+    <title>변화 적응 스타일</title>
+    <link>https://www.mindpickq.com/change-adapt</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/change-adapt</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[새로운 환경·규칙 변화에 반응하는 당신의 기본 전략을 봅니다.]]></description>
+  </item>
+  <item>
+    <title>호기심 스펙트럼</title>
+    <link>https://www.mindpickq.com/curiosity-spectrum</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/curiosity-spectrum</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[새로움에 반응하는 방식과 관심의 깊이를 알아봅니다.]]></description>
+  </item>
+  <item>
+    <title>계획 지평 성향</title>
+    <link>https://www.mindpickq.com/planning-horizon</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/planning-horizon</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[시간 축에서 목표를 어떻게 세우고 운영하는지 살펴봅니다.]]></description>
+  </item>
+  <item>
+    <title>학습 입력 선호</title>
+    <link>https://www.mindpickq.com/learning-modality</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/learning-modality</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[정보를 받아들이고 기억에 남기는 선호 채널을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>원격근무 적합 경향</title>
+    <link>https://www.mindpickq.com/remote-work-fit</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/remote-work-fit</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[원격 환경에서 성과를 내는 데 필요한 요소들을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>회의 참여 스타일</title>
+    <link>https://www.mindpickq.com/meeting-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/meeting-style</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[모임/회의에서 자연스럽게 맡는 기여 방식의 경향을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>노트 정리 스타일</title>
+    <link>https://www.mindpickq.com/note-taking-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/note-taking-style</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[정보를 기록하고 재활용하는 방식의 선호를 파악합니다.]]></description>
+  </item>
+  <item>
+    <title>미니멀 vs 수집가</title>
+    <link>https://www.mindpickq.com/minimal-vs-collector</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/minimal-vs-collector</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[물건·디지털 자산을 대하는 태도의 균형을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>여행 성향</title>
+    <link>https://www.mindpickq.com/travel-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/travel-style</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[여행을 설계하고 즐기는 방식의 선호를 알아봅니다.]]></description>
+  </item>
+  <item>
+    <title>식도락·새로움 선호</title>
+    <link>https://www.mindpickq.com/food-adventure</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/food-adventure</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[음식 선택에서의 새로움·안정·가치의 균형을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>읽기 습관 프로필</title>
+    <link>https://www.mindpickq.com/reading-habit</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/reading-habit</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[지식/취미 독서에서의 접근 방식을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>선물/감사 표현 취향</title>
+    <link>https://www.mindpickq.com/gift-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/gift-style</guid>
+    <pubDate>Tue, 14 Oct 2025 01:45:32 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[관계에서 고마움을 표현할 때 선호하는 방식의 기울기를 알아봅니다.]]></description>
+  </item>
+  <item>
+    <title>애착 스타일 스펙트럼</title>
+    <link>https://www.mindpickq.com/attachment-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/attachment-style</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[성인 애착 이론을 바탕으로 관계에서의 기본 반응 경향을 간단히 점검합니다. (자기이해용)]]></description>
+  </item>
+  <item>
+    <title>갈등 접근 경향</title>
+    <link>https://www.mindpickq.com/conflict-approach</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/conflict-approach</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[갈등 상황에서 당신이 기본적으로 무엇을 우선시하는지 살펴봅니다.]]></description>
+  </item>
+  <item>
+    <title>의사결정 스타일</title>
+    <link>https://www.mindpickq.com/decision-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/decision-style</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[결정을 내릴 때의 정보 선호와 속도, 확신의 기준을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>미루기 유형 체크</title>
+    <link>https://www.mindpickq.com/procrastination-profile</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/procrastination-profile</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[동기·기대·지연·충동성의 균형을 간단 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>위험 감수 성향</title>
+    <link>https://www.mindpickq.com/risk-tolerance</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/risk-tolerance</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[불확실성 상황에서의 선택 경향을 살펴봅니다(투자 권유 아님).]]></description>
+  </item>
+  <item>
+    <title>성장 마인드셋 체크</title>
+    <link>https://www.mindpickq.com/growth-mindset</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/growth-mindset</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[도전·피드백·노력에 대한 태도를 간단히 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>습관 형성 스타일</title>
+    <link>https://www.mindpickq.com/habit-builder</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/habit-builder</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[트리거·보상·사회적 약속·측정 중 무엇이 나를 움직이는지 봅니다.]]></description>
+  </item>
+  <item>
+    <title>시간관리 성향</title>
+    <link>https://www.mindpickq.com/time-management</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/time-management</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[우선순위·블록 스케줄·마감 활용·흐름 유지 중 선호를 파악합니다.]]></description>
+  </item>
+  <item>
+    <title>몰입·주의 스타일</title>
+    <link>https://www.mindpickq.com/focus-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/focus-style</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[몰입을 유지하는 방식과 방해 요인 관리를 살펴봅니다.]]></description>
+  </item>
+  <item>
+    <title>창의 문제해결 접근</title>
+    <link>https://www.mindpickq.com/creativity-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/creativity-style</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[아이디어 발산 vs 선택·정제의 선호를 파악합니다.]]></description>
+  </item>
+  <item>
+    <title>리더십 스타일</title>
+    <link>https://www.mindpickq.com/leadership-flavor</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/leadership-flavor</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[팀을 이끄는 방식과 동기 부여 전략의 경향을 봅니다.]]></description>
+  </item>
+  <item>
+    <title>팀 내 역할 경향</title>
+    <link>https://www.mindpickq.com/team-role-lite</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/team-role-lite</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[프로젝트에서 자연스럽게 맡는 역할 기울기를 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>스트레스 대처 스타일</title>
+    <link>https://www.mindpickq.com/stress-coping-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/stress-coping-style</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[스트레스 상황에서 주로 쓰는 대처 전략을 알아봅니다.]]></description>
+  </item>
+  <item>
+    <title>협상 태도 유형</title>
+    <link>https://www.mindpickq.com/negotiation-stance</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/negotiation-stance</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[가치 창출 vs 분배, 원칙과 관계의 균형을 어떻게 잡는지 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>피드백 선호도</title>
+    <link>https://www.mindpickq.com/feedback-preference</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/feedback-preference</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[언제·어떻게 받는 피드백이 가장 도움이 되는지 파악합니다.]]></description>
+  </item>
+  <item>
+    <title>개인 경계 선명도</title>
+    <link>https://www.mindpickq.com/boundaries-index</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/boundaries-index</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[관계에서 나의 기준·선호·한계를 얼마나 분명히 다루는지 봅니다.]]></description>
+  </item>
+  <item>
+    <title>디지털 위생 점검</title>
+    <link>https://www.mindpickq.com/digital-hygiene</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/digital-hygiene</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[디지털 사용 습관이 집중과 관계에 미치는 영향을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>금전 습관 성향</title>
+    <link>https://www.mindpickq.com/financial-habit</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/financial-habit</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[예산·저축·투자·소비의 균형 감각을 점검합니다(재정 조언 아님).]]></description>
+  </item>
+  <item>
+    <title>학습 접근 전략</title>
+    <link>https://www.mindpickq.com/learning-approach</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/learning-approach</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[학습 목표·처리 방식의 선호를 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>수면 리듬 성향</title>
+    <link>https://www.mindpickq.com/sleep-rhythm</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/sleep-rhythm</guid>
+    <pubDate>Mon, 13 Oct 2025 23:58:52 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[하루 에너지 고점의 시간대와 생활 리듬을 점검합니다(진단 아님).]]></description>
+  </item>
+  <item>
+    <title>투모로우바이투게더 덕력 테스트</title>
+    <link>https://www.mindpickq.com/txt-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/txt-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>아이브 덕력 테스트</title>
+    <link>https://www.mindpickq.com/ive-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/ive-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>BTS 덕력 테스트</title>
+    <link>https://www.mindpickq.com/bts-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/bts-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>BLACKPINK 덕력 테스트</title>
+    <link>https://www.mindpickq.com/blackpink-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/blackpink-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>TWICE 덕력 테스트</title>
+    <link>https://www.mindpickq.com/twice-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/twice-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>SEVENTEEN 덕력 테스트</title>
+    <link>https://www.mindpickq.com/seventeen-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/seventeen-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>NCT DREAM 덕력 테스트</title>
+    <link>https://www.mindpickq.com/nct-dream-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/nct-dream-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>NewJeans 덕력 테스트</title>
+    <link>https://www.mindpickq.com/newjeans-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/newjeans-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>Stray Kids 덕력 테스트</title>
+    <link>https://www.mindpickq.com/stray-kids-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/stray-kids-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>Red Velvet 덕력 테스트</title>
+    <link>https://www.mindpickq.com/red-velvet-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/red-velvet-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>aespa 덕력 테스트</title>
+    <link>https://www.mindpickq.com/aespa-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/aespa-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>LE SSERAFIM 덕력 테스트</title>
+    <link>https://www.mindpickq.com/le-sserafim-fandom</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/le-sserafim-fandom</guid>
+    <pubDate>Mon, 13 Oct 2025 07:32:42 GMT</pubDate>
+    <category>덕력 테스트</category>
+    <description><![CDATA[스스로 점검하는 팬력 12문항]]></description>
+  </item>
+  <item>
+    <title>이상형 스타일 (여성편)</title>
+    <link>https://www.mindpickq.com/ideal-type-female</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/ideal-type-female</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:26 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[여성 이상형의 핵심 스타일을 가볍게 탐색합니다.]]></description>
+  </item>
+  <item>
+    <title>연애 공략법</title>
+    <link>https://www.mindpickq.com/dating-strategy</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/dating-strategy</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:14 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[현실적인 연애 운영 전략을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>연애 리드/대응 스펙트럼</title>
+    <link>https://www.mindpickq.com/dating-lead-spectrum</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/dating-lead-spectrum</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:12 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[주도성과 배려의 균형을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>이상형 스타일 (남성편)</title>
+    <link>https://www.mindpickq.com/ideal-type-male</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/ideal-type-male</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:10 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[남성 이상형의 핵심 스타일을 가볍게 탐색합니다.]]></description>
+  </item>
+  <item>
+    <title>결혼 준비 지수</title>
+    <link>https://www.mindpickq.com/marriage-readiness</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/marriage-readiness</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:08 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[현실·정서 요소를 아우르는 결혼 준비 상태를 살펴봅니다.]]></description>
+  </item>
+  <item>
+    <title>연애 성향 스펙트럼</title>
+    <link>https://www.mindpickq.com/love-style-spectrum</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/love-style-spectrum</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:04 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[연애에서의 표현, 주도, 애착 밸런스를 확인합니다.]]></description>
+  </item>
+  <item>
+    <title>운명의 동물</title>
+    <link>https://www.mindpickq.com/destiny-animal</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/destiny-animal</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:02 GMT</pubDate>
+    <category>엔터테인먼트</category>
+    <description><![CDATA[답변 패턴을 동물 타입으로 표현합니다.]]></description>
+  </item>
+  <item>
+    <title>아우라 스펙트럼</title>
+    <link>https://www.mindpickq.com/aura-spectrum</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/aura-spectrum</guid>
+    <pubDate>Fri, 10 Oct 2025 15:25:00 GMT</pubDate>
+    <category>엔터테인먼트</category>
+    <description><![CDATA[주변에 전달하는 ‘분위기 색’을 알아봅니다.]]></description>
+  </item>
+  <item>
+    <title>직감 ‘핑’ 지수</title>
+    <link>https://www.mindpickq.com/intuition-ping</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/intuition-ping</guid>
+    <pubDate>Fri, 10 Oct 2025 15:24:58 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[‘핑’ 하고 오는 감을 얼마나 활용하는지 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>메시지 톤 컬러</title>
+    <link>https://www.mindpickq.com/message-tone-color</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/message-tone-color</guid>
+    <pubDate>Fri, 10 Oct 2025 15:24:56 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[내 메시지/말투의 경향을 색으로 표현해 봅니다.]]></description>
+  </item>
+  <item>
+    <title>공감능력 지수</title>
+    <link>https://www.mindpickq.com/empathy-index</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/empathy-index</guid>
+    <pubDate>Fri, 10 Oct 2025 15:24:54 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[나의 공감 습관을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>스마트폰 사용 균형 체크</title>
+    <link>https://www.mindpickq.com/smartphone-balance</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/smartphone-balance</guid>
+    <pubDate>Fri, 10 Oct 2025 15:01:28 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[스마트폰 사용이 생활 리듬·집중·관계에 미치는 영향을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>완벽주의 경향 체크</title>
+    <link>https://www.mindpickq.com/perfectionism-check</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/perfectionism-check</guid>
+    <pubDate>Fri, 10 Oct 2025 15:01:26 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[기준 설정과 오류 민감도, 수행 압박 등 완벽주의적 경향을 살펴봅니다.]]></description>
+  </item>
+  <item>
+    <title>대인 소통 스타일 체크</title>
+    <link>https://www.mindpickq.com/communication-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/communication-style</guid>
+    <pubDate>Fri, 10 Oct 2025 15:01:24 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[관계 소통 습관을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>감정조절 전략 프로파일</title>
+    <link>https://www.mindpickq.com/emotion-regulation</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/emotion-regulation</guid>
+    <pubDate>Fri, 10 Oct 2025 15:01:22 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[감정을 다루는 일상 전략을 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>번아웃 위험도 체크</title>
+    <link>https://www.mindpickq.com/burnout-risk</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/burnout-risk</guid>
+    <pubDate>Fri, 10 Oct 2025 15:01:20 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[정서적 소진·냉소·성취감 저하 신호를 간단히 점검합니다.]]></description>
+  </item>
+  <item>
+    <title>회복탄력성 지수</title>
+    <link>https://www.mindpickq.com/resilience-index</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/resilience-index</guid>
+    <pubDate>Fri, 10 Oct 2025 15:01:16 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[변화·실패 후 다시 서는 힘(인지·정서·행동 요인)을 가늠합니다.]]></description>
+  </item>
+  <item>
+    <title>수면의 질 간이검사</title>
+    <link>https://www.mindpickq.com/sleep-quality</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/sleep-quality</guid>
+    <pubDate>Fri, 10 Oct 2025 15:01:14 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[최근 수면의 질과 리듬을 간단히 점검합니다. 진단 목적이 아닌 자기점검용입니다.]]></description>
+  </item>
+  <item>
+    <title>여잘알 테스트</title>
+    <link>https://www.mindpickq.com/girlexpert</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/girlexpert</guid>
+    <pubDate>Thu, 02 Oct 2025 07:50:22 GMT</pubDate>
+    <category>엔터테인먼트</category>
+    <description><![CDATA[가볍게 즐기는 상식 퀴즈]]></description>
+  </item>
+  <item>
+    <title>마음 시그널 테스트</title>
+    <link>https://www.mindpickq.com/mind-signal</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/mind-signal</guid>
+    <pubDate>Thu, 02 Oct 2025 07:50:22 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[호감·관심 시그널 읽기 감각]]></description>
+  </item>
+  <item>
+    <title>업무 성향 TEST</title>
+    <link>https://www.mindpickq.com/work-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/work-style</guid>
+    <pubDate>Thu, 02 Oct 2025 07:50:22 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[일할 때의 나, 실무 성향 자가진단]]></description>
+  </item>
+  <item>
+    <title>지금 하는 일 궁합 테스트</title>
+    <link>https://www.mindpickq.com/job-compat</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/job-compat</guid>
+    <pubDate>Thu, 02 Oct 2025 07:50:22 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[현재 직무와의 핏을 점검]]></description>
+  </item>
+  <item>
+    <title>개발자 유형 테스트</title>
+    <link>https://www.mindpickq.com/dev-type</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/dev-type</guid>
+    <pubDate>Thu, 02 Oct 2025 07:50:22 GMT</pubDate>
+    <category>커리어</category>
+    <description><![CDATA[문제 해결·협업·생산성 스타일]]></description>
+  </item>
+  <item>
+    <title>17금 첫인상 테스트</title>
+    <link>https://www.mindpickq.com/17first-impression</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/17first-impression</guid>
+    <pubDate>Thu, 02 Oct 2025 07:50:22 GMT</pubDate>
+    <category>엔터테인먼트</category>
+    <description><![CDATA[재미로 보는 첫인상 유형]]></description>
+  </item>
+  <item>
+    <title>티니핑 MBTI 유형테스트</title>
+    <link>https://www.mindpickq.com/teenping-mbti</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/teenping-mbti</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>엔터테인먼트</category>
+    <description><![CDATA[12문항으로 알아보는 나와 닮은 티니핑 (비공식)]]></description>
+  </item>
+  <item>
+    <title>이번 달 내 사랑운</title>
+    <link>https://www.mindpickq.com/love-style</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/love-style</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[이번 달의 컨디션·여건·마음가짐을 바탕으로 연애 기회의 흐름을 가볍게 점쳐보는 엔터테인먼트 테스트입니다. 각 문항에서 더 가까운 쪽을 골라 주세요.]]></description>
+  </item>
+  <item>
+    <title>연애 직급 테스트</title>
+    <link>https://www.mindpickq.com/love-rank</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/love-rank</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[연애할 때의 주도성, 소통 방식, 문제 해결 태도를 바탕으로 당신의 연애 '직급'을 추정합니다. 각 문항에서 더 가까운 쪽을 고르세요.]]></description>
+  </item>
+  <item>
+    <title>공부 습관 자가진단</title>
+    <link>https://www.mindpickq.com/study-habit</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/study-habit</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>교육</category>
+    <description><![CDATA[하루·주간 루틴, 집중 환경, 복습/기록, 마감·피드백 습관을 간단히 점검합니다. 각 문항에서 더 가까운 쪽을 선택하세요.]]></description>
+  </item>
+  <item>
+    <title>깻잎 레벨 테스트</title>
+    <link>https://www.mindpickq.com/leaf-level</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/leaf-level</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[말 많은 '깻잎 논쟁'을 모티브로, 연애에서의 경계 감각(관여 vs. 자율)을 가볍게 점검하는 엔터테인먼트 테스트입니다. 각 문항에서 더 가까운 쪽을 선택하세요.]]></description>
+  </item>
+  <item>
+    <title>내 연애 녹는점·끓는점</title>
+    <link>https://www.mindpickq.com/love-thermo</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/love-thermo</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[애정 표현에 녹아내리는 포인트(녹는점)와 갈등이 끓어오르는 지점(끓는점)을 간단히 가늠합니다. 가벼운 엔터테인먼트 테스트로 참고만 하세요. (비공식)]]></description>
+  </item>
+  <item>
+    <title>K-부모 테스트</title>
+    <link>https://www.mindpickq.com/k-parent</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/k-parent</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>부모&amp;육아</category>
+    <description><![CDATA[생활 규칙, 학습 태도, 정서 지원, 훈육 방식을 기준으로 한국형 양육 특성과의 거리를 가볍게 점검합니다. (비공식·참고용)]]></description>
+  </item>
+  <item>
+    <title>직장인 전생 테스트</title>
+    <link>https://www.mindpickq.com/office-pastlife</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/office-pastlife</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>엔터테인먼트</category>
+    <description><![CDATA[업무 스타일(기획/실행/소통/리스크 대처)로 전생 콘셉트를 가볍게 붙여보는 놀이형 테스트입니다. 실제 성격 진단이 아니며 재미로 즐겨주세요.]]></description>
+  </item>
+  <item>
+    <title>금쪽이 테스트</title>
+    <link>https://www.mindpickq.com/geumjjok</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/geumjjok</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>부모&amp;육아</category>
+    <description><![CDATA[민감성·자기조절·환경 적합도 관점에서 일상 속 '금쪽 시그널'을 가볍게 살펴봅니다. (방송과 무관한 비공식)]]></description>
+  </item>
+  <item>
+    <title>당신은 어떤 엄마일까요?</title>
+    <link>https://www.mindpickq.com/mom-type</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/mom-type</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>부모&amp;육아</category>
+    <description><![CDATA[양육 철학, 소통 방식, 규칙/자율의 균형을 점검해 '엄마 유형'을 간단히 분류합니다. (비공식·참고용)]]></description>
+  </item>
+  <item>
+    <title>사이코패스 경향 자가체크</title>
+    <link>https://www.mindpickq.com/psychopath-check</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/psychopath-check</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[12문항으로 가볍게 점검 (엔터테인먼트)]]></description>
+  </item>
+  <item>
+    <title>소시오패스 경향 자가체크</title>
+    <link>https://www.mindpickq.com/sociopath-check</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/sociopath-check</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[12문항으로 가볍게 점검 (엔터테인먼트)]]></description>
+  </item>
+  <item>
+    <title>MBTI 매운맛 테스트</title>
+    <link>https://www.mindpickq.com/spicy-mbti</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/spicy-mbti</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>엔터테인먼트</category>
+    <description><![CDATA[12문항, 선호의 끝맛까지!]]></description>
+  </item>
+  <item>
+    <title>커플 논쟁 테스트 1</title>
+    <link>https://www.mindpickq.com/couple-arguing</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/couple-arguing</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[커플 대화의 '온도'를 가볍게 점검합니다. 정답은 없어요. 우리만의 적정 온도를 찾는 참고자료로 보세요.]]></description>
+  </item>
+  <item>
+    <title>커플 논쟁 테스트 2</title>
+    <link>https://www.mindpickq.com/couple-arguing2</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/couple-arguing2</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[갈등을 다루는 기본 전략 성향을 살펴봅니다. 정답은 없어요. 서로의 다름을 이해하는 참고자료입니다.]]></description>
+  </item>
+  <item>
+    <title>연애 호르몬 테스트</title>
+    <link>https://www.mindpickq.com/love-hormone</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/love-hormone</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>연애&amp;결혼</category>
+    <description><![CDATA[도파민·옥시토신·세로토닌·테스토스테론에서 착안한 '연애 에너지 감각'을 엔터테인먼트 관점에서 가볍게 살펴봅니다. 과학적 진단이 아닙니다.]]></description>
+  </item>
+  <item>
+    <title>감성력 테스트</title>
+    <link>https://www.mindpickq.com/emosense-test</link>
+    <guid isPermaLink="true">https://www.mindpickq.com/emosense-test</guid>
+    <pubDate>Thu, 02 Oct 2025 07:22:34 GMT</pubDate>
+    <category>라이프스타일</category>
+    <description><![CDATA[감정 인식(라벨링)·공감·조절·복구 대화에 관한 간단한 자기점검입니다. 엔터테인먼트 용도이며, 불편감이 크면 전문 도움을 고려하세요.]]></description>
+  </item>
+  </channel>
+</rss>

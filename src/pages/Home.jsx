@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import Card from "../components/Card.jsx";
 
 /**
@@ -433,6 +433,21 @@ export default function Home() {
                 </button>
               ))}
             </nav>
+            {/* 개인정보처리방침: 카테고리 바로 아래 요약/링크 */}
+            <div className="policy-under-category">
+              <details>
+                <summary>개인정보처리방침(요약)</summary>
+                <ul>
+                  <li>회원가입/로그인/서버 저장 없음</li>
+                  <li>퀴즈 응답은 브라우저에서만 처리, 서버 전송 안 함</li>
+                  <li>세션 저장소로 스크롤·카테고리만 저장(쿠키 미사용)</li>
+                  <li>광고 파트너(AdSense)가 쿠키/식별자 사용 가능</li>
+                </ul>
+              </details>
+              <Link to="/privacy" className="policy-link">
+                개인정보처리방침 전체 보기
+              </Link>
+            </div>
           </aside>
 
           <main className="main">

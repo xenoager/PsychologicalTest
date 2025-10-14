@@ -102,6 +102,29 @@ a {
   display: grid;
   gap: 8px;
 }
+
+/* 개인정보처리방침 요약/링크 (카테고리 아래) */
+.policy-under-category {
+  margin-top: 14px;
+  border-top: 1px dashed var(--line);
+  padding-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.policy-under-category details { margin-bottom: 6px; }
+.policy-under-category ul { margin: 6px 0 0 18px; padding: 0; }
+.policy-under-category .policy-link {
+  display: inline-block;
+  margin-top: 6px;
+  text-decoration: underline;
+}
+
+/* 정책 본문(별도 페이지) 공통 스타일 */
+.policy-body h3 { margin-top: 1.25rem; font-size: 18px; }
+.policy-body table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+.policy-body th, .policy-body td { border: 1px solid var(--line); padding: 8px; text-align: left; }
+.policy-body small { color: var(--muted); }
+
 .cat {
   padding: 10px 12px;
   border-radius: 12px;
