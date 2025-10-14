@@ -52,7 +52,7 @@
       "category": "연애&결혼",
       "badge": "연애",
       "author": "유형테스트",
-      "image": "/og/love-thermo.svg"
+      "image": "/og/leaf-level.svg"
     },
     {
       "slug": "love-thermo",
@@ -61,7 +61,7 @@
       "category": "연애&결혼",
       "badge": "연애",
       "author": "유형테스트",
-      "image": "/og/leaf-level.svg"
+      "image": "/og/love-thermo.svg"
     },
     {
       "slug": "k-parent",
@@ -485,6 +485,321 @@
       "badge": "이상형",
       "author": "유형테스트",
       "image": "/og/ideal-type-female.svg"
+    },
+    {
+      "slug": "attachment-style",
+      "title": "애착 스타일 스펙트럼",
+      "subtitle": "연애·관계에서 보이는 기본 반응 패턴",
+      "category": "연애&결혼",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/attachment-style.svg"
+    },
+    {
+      "slug": "conflict-approach",
+      "title": "갈등 접근 경향",
+      "subtitle": "문제·관계·속도 중 무엇을 먼저 지키나",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/conflict-approach.svg"
+    },
+    {
+      "slug": "decision-style",
+      "title": "의사결정 스타일",
+      "subtitle": "직관 vs 분석, 속도 vs 확실성",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/decision-style.svg"
+    },
+    {
+      "slug": "procrastination-profile",
+      "title": "미루기 유형 체크",
+      "subtitle": "왜 지금 시작이 어려운가",
+      "category": "교육",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/procrastination-profile.svg"
+    },
+    {
+      "slug": "risk-tolerance",
+      "title": "위험 감수 성향",
+      "subtitle": "보수와 모험 사이 나의 기준",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/risk-tolerance.svg"
+    },
+    {
+      "slug": "growth-mindset",
+      "title": "성장 마인드셋 체크",
+      "subtitle": "능력은 개발될 수 있다는 믿음",
+      "category": "교육",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/growth-mindset.svg"
+    },
+    {
+      "slug": "habit-builder",
+      "title": "습관 형성 스타일",
+      "subtitle": "나는 무엇으로 꾸준해지는가",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/habit-builder.svg"
+    },
+    {
+      "slug": "time-management",
+      "title": "시간관리 성향",
+      "subtitle": "중요-긴급, 블록·마감, 흐름",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/time-management.svg"
+    },
+    {
+      "slug": "focus-style",
+      "title": "몰입·주의 스타일",
+      "subtitle": "딥워크 vs 스프린트 vs 상호작용",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/focus-style.svg"
+    },
+    {
+      "slug": "creativity-style",
+      "title": "창의 문제해결 접근",
+      "subtitle": "발산·수렴·통합·연결",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/creativity-style.svg"
+    },
+    {
+      "slug": "leadership-flavor",
+      "title": "리더십 스타일",
+      "subtitle": "비전·코칭·민주·성과",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/leadership-flavor.svg"
+    },
+    {
+      "slug": "team-role-lite",
+      "title": "팀 내 역할 경향",
+      "subtitle": "전략·실행·조율·품질",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/team-role-lite.svg"
+    },
+    {
+      "slug": "stress-coping-style",
+      "title": "스트레스 대처 스타일",
+      "subtitle": "문제·정서·회피·지지",
+      "category": "라이프스타일",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/stress-coping-style.svg"
+    },
+    {
+      "slug": "negotiation-stance",
+      "title": "협상 태도 유형",
+      "subtitle": "통합·원칙·타협·경쟁",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/negotiation-stance.svg"
+    },
+    {
+      "slug": "feedback-preference",
+      "title": "피드백 선호도",
+      "subtitle": "직설·배려·데이터·코칭",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/feedback-preference.svg"
+    },
+    {
+      "slug": "boundaries-index",
+      "title": "개인 경계 선명도",
+      "subtitle": "요구·한계·책임의 구획",
+      "category": "라이프스타일",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/boundaries-index.svg"
+    },
+    {
+      "slug": "digital-hygiene",
+      "title": "디지털 위생 점검",
+      "subtitle": "알림·스크린타임·집중도",
+      "category": "라이프스타일",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/digital-hygiene.svg"
+    },
+    {
+      "slug": "financial-habit",
+      "title": "금전 습관 성향",
+      "subtitle": "예산·절약·투자·소비",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/financial-habit.svg"
+    },
+    {
+      "slug": "learning-approach",
+      "title": "학습 접근 전략",
+      "subtitle": "심층·전략·표면·경험",
+      "category": "교육",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/learning-approach.svg"
+    },
+    {
+      "slug": "sleep-rhythm",
+      "title": "수면 리듬 성향",
+      "subtitle": "아침형·중간형·밤형·불규칙",
+      "category": "라이프스타일",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/sleep-rhythm.svg"
+    },
+    {
+      "slug": "social-energy",
+      "title": "사교 에너지 프로필",
+      "subtitle": "혼자 충전 vs 사람과 충전",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/social-energy.svg"
+    },
+    {
+      "slug": "empathy-style",
+      "title": "공감 표현 스타일",
+      "subtitle": "경청·정서·해결·지지",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/empathy-style.svg"
+    },
+    {
+      "slug": "resilience-mini",
+      "title": "회복탄력성 미니 체크",
+      "subtitle": "낙관·유연·관계·의미",
+      "category": "라이프스타일",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/resilience-mini.svg"
+    },
+    {
+      "slug": "change-adapt",
+      "title": "변화 적응 스타일",
+      "subtitle": "예측·실험·속도·안정",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/change-adapt.svg"
+    },
+    {
+      "slug": "curiosity-spectrum",
+      "title": "호기심 스펙트럼",
+      "subtitle": "탐색·수집·깊이·연결",
+      "category": "교육",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/curiosity-spectrum.svg"
+    },
+    {
+      "slug": "planning-horizon",
+      "title": "계획 지평 성향",
+      "subtitle": "단기·중기·장기·기회",
+      "category": "커리어",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/planning-horizon.svg"
+    },
+    {
+      "slug": "learning-modality",
+      "title": "학습 입력 선호",
+      "subtitle": "텍스트·시각·청각·체험",
+      "category": "교육",
+      "badge": "선호",
+      "author": "유형테스트",
+      "image": "/og/learning-modality.svg"
+    },
+    {
+      "slug": "remote-work-fit",
+      "title": "원격근무 적합 경향",
+      "subtitle": "자율·소통·리듬·환경",
+      "category": "커리어",
+      "badge": "지표",
+      "author": "유형테스트",
+      "image": "/og/remote-work-fit.svg"
+    },
+    {
+      "slug": "meeting-style",
+      "title": "회의 참여 스타일",
+      "subtitle": "촉진·정리·추진·성찰",
+      "category": "커리어",
+      "badge": "역할",
+      "author": "유형테스트",
+      "image": "/og/meeting-style.svg"
+    },
+    {
+      "slug": "note-taking-style",
+      "title": "노트 정리 스타일",
+      "subtitle": "개요·지도·아톰·스크랩",
+      "category": "교육",
+      "badge": "선호",
+      "author": "유형테스트",
+      "image": "/og/note-taking-style.svg"
+    },
+    {
+      "slug": "minimal-vs-collector",
+      "title": "미니멀 vs 수집가",
+      "subtitle": "소유·정리·애착·활용",
+      "category": "라이프스타일",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/minimal-vs-collector.svg"
+    },
+    {
+      "slug": "travel-style",
+      "title": "여행 성향",
+      "subtitle": "계획·즉흥·문화·휴식",
+      "category": "라이프스타일",
+      "badge": "선호",
+      "author": "유형테스트",
+      "image": "/og/travel-style.svg"
+    },
+    {
+      "slug": "food-adventure",
+      "title": "식도락·새로움 선호",
+      "subtitle": "안정·모험·지역·건강",
+      "category": "라이프스타일",
+      "badge": "선호",
+      "author": "유형테스트",
+      "image": "/og/food-adventure.svg"
+    },
+    {
+      "slug": "reading-habit",
+      "title": "읽기 습관 프로필",
+      "subtitle": "심층·큐레이션·사회·에피소드",
+      "category": "교육",
+      "badge": "성향",
+      "author": "유형테스트",
+      "image": "/og/reading-habit.svg"
+    },
+    {
+      "slug": "gift-style",
+      "title": "선물/감사 표현 취향",
+      "subtitle": "실용·경험·감성·품질",
+      "category": "연애&결혼",
+      "badge": "선호",
+      "author": "유형테스트",
+      "image": "/og/gift-style.svg"
     }
   ]
 }
