@@ -1,4 +1,3 @@
-# https://mindpickq.com/robots.txt
 User-agent: *
 Allow: /
 
