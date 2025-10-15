@@ -43,7 +43,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
   <channel>
     <title>마인드픽Q</title>
     <link>${site}/</link>
-    <description>최신 심리/성격 테스트</description>
+    <description>MBTI, 연애, 성격 유형, 감정, 성향, 공감 테스트</description>
     <language>ko</language>
     <lastBuildDate>${nowRfc822}</lastBuildDate>
 ${body}

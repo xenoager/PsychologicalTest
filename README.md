@@ -36,3 +36,23 @@ web/
 ```
 
 https://bold-jenn-kaionos-0733c85c.koyeb.app/
+
+RSS.xml 만들기
+
+node scripts\indexnow\setup-key.mjs
+
+curl "https://searchadvisor.naver.com/indexnow?url=https://mindpickq.com/&key=319a8909b8fabce6a18179e2fc8840f2&keyLocation=https://mindpickq.com/319a8909b8fabce6a18179e2fc8840f2.txt"
+
+set INDEXNOW_KEY=319a8909b8fabce6a18179e2fc8840f2
+set SITE_ORIGIN=https://mindpickq.com
+node scripts\indexnow\ping-bulk.mjs --verbose
+
+node scripts\indexnow\setup-key.mjs --key 319a8909b8fabce6a18179e2fc8840f2 --out public\indexnow
+npm run build & (배포)
+
+node scripts\indexnow\ping-bulk.mjs ^
+--site https://mindpickq.com ^
+--key 319a8909b8fabce6a18179e2fc8840f2 ^
+--key-location https://mindpickq.com/indexnow/319a8909b8fabce6a18179e2fc8840f2.txt ^
+--endpoints https://searchadvisor.naver.com/indexnow ^
+--verbose

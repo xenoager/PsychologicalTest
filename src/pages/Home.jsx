@@ -433,6 +433,42 @@ export default function Home() {
                 </button>
               ))}
             </nav>
+
+            {/* ☕ 커피챗/후원: 카테고리와 개인정보처리방침 사이 */}
+            <div className="coffeechat">
+              <h3>☕ 커피챗 · 후원</h3>
+              <p>
+                서비스가 도움이 되셨다면 커피 한 잔으로 응원해 주세요. 아래 버튼
+                또는 QR코드를 통해 <b>Buy Me a Coffee</b>에서 커피챗을
+                예약/후원하실 수 있어요.
+              </p>
+              <div className="coffeechat-actions">
+                <a
+                  href="https://buymeacoffee.com/mindpickq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="coffee-btn"
+                >
+                  커피챗 열기
+                </a>
+              </div>
+              <a
+                href="https://buymeacoffee.com/mindpickq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/bmc_qr.png"
+                  alt="Buy Me a Coffee QR (mindpickq)"
+                  className="coffee-qr"
+                />
+              </a>
+            </div>
+
+            <div className="policy-under-category">
+              {/* 기존 개인정보처리방침 요약 */}
+            </div>
+
             {/* 개인정보처리방침: 카테고리 바로 아래 요약/링크 */}
             <div className="policy-under-category">
               <details>

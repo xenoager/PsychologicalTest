@@ -560,3 +560,51 @@ a {
     padding-left: max(0px, var(--safe-left));
   }
 }
+/* ===== 커피챗(후원) 블록 ===== */
+.sidebar .coffeechat {
+  margin: 14px 0 16px;
+  padding: 14px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: rgba(79, 70, 229, 0.06);
+}
+.sidebar .coffeechat h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+.sidebar .coffeechat p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+.sidebar .coffeechat .coffeechat-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.sidebar .coffeechat .coffee-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  text-decoration: none;
+  font-weight: 700;
+  background: #ffdd00;
+  color: #111 !important;
+}
+.sidebar .coffeechat .coffee-qr {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  border-radius: 8px;
+  background: #fff;
+}
+@media (max-width: 860px) {
+  .sidebar .coffeechat {
+    padding: 12px;
+  }
+  .sidebar .coffeechat h3 {
+    font-size: 15px;
+  }
+}

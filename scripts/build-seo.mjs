@@ -60,7 +60,7 @@ function pickDesc(item, quiz) {
   return (
     (quiz?.desc && String(quiz.desc).trim()) ||
     (item?.subtitle && String(item.subtitle).trim()) ||
-    "최신 심리테스트, 연애 심리, 성격 유형, 감정 성향 테스트 등 재미있는 테스트가 가득한 사이트입니다."
+    "MBTI, 연애, 성격 유형, 감정, 성향, 공감 테스트"
   );
 }
 
@@ -82,8 +82,7 @@ function injectHeadAndNoscript(html, head, noscript = "") {
 
 function headForHome() {
   const title = "유형테스트 포털 - 마인드픽Q";
-  const desc =
-    "최신 심리테스트, 연애 심리, 성격 유형, 감정 성향 테스트 등 재미있는 테스트가 가득한 사이트입니다.";
+  const desc = "MBTI, 연애, 성격 유형, 감정, 성향, 공감 테스트";
   const url = `${SITE}/`;
   const image = `${SITE}/og-plain.png`;
   return `
@@ -234,7 +233,7 @@ function buildRSS(items) {
     "<channel>",
     `<title>마인드픽Q</title>`,
     `<link>${SITE}</link>`,
-    `<description>최신 심테, 연애 심리, 성격 유형, 감정 성향 테스트</description>`,
+    `<description>MBTI, 연애, 성격 유형, 감정, 성향, 공감 테스트</description>`,
     `<language>ko-kr</language>`,
     `<lastBuildDate>${now}</lastBuildDate>`,
   ];
