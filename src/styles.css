@@ -594,7 +594,7 @@ a {
   color: #111 !important;
 }
 .sidebar .coffeechat .coffee-qr {
-  width: clamp(130px, 45vw, 130px);
+  width: clamp(140px, 25vw, 140px);
   max-width: 260px;
   display: block;
   border-radius: 8px;
