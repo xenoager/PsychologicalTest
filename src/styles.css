@@ -549,7 +549,7 @@ a {
 
 /* Brand: '마인드픽Q' */
 .logo .brand {
-  font-size: 22px;
+  font-size: clamp(16px, 2.4vw, 20px);
   font-weight: 900;
   letter-spacing: -0.2px;
   line-height: 1;
