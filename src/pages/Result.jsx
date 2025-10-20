@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { assetUrl } from "../utils/asset.js";
 import { evaluateQuiz } from "../lib/engine.js";
+import { sendEvent } from "../lib/ga.js";
 
 /* ===================== helpers ===================== */
 function isMbtiCode(s) {
@@ -289,6 +290,11 @@ export default function Result() {
     [typeParam, location]
   );
 
+  useEffect(() => {
+    if (targetType) { sendEvent("result_view", { quiz_slug: slug, result_type: targetType }); }
+  }, [slug, targetType]);
+
+
   const stateResult = location.state?.result;
   const stateScored = location.state?.scored;
   const stateQuiz = location.state?.quiz;
@@ -380,9 +386,11 @@ export default function Result() {
           url: shareUrl,
         });
         setShareMsg("공유 링크를 열었어요.");
+        try { sendEvent("quiz_share", { quiz_slug: slug, result_type: targetType || "", method: "web_share" }); } catch (e) {}
       } else if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(shareUrl);
         setShareMsg("공유 링크가 복사되었어요.");
+        try { sendEvent("quiz_share", { quiz_slug: slug, result_type: targetType || "", method: "copy" }); } catch (e) {}
       } else {
         const ta = document.createElement("textarea");
         ta.value = shareUrl;
@@ -391,6 +399,7 @@ export default function Result() {
         document.execCommand("copy");
         document.body.removeChild(ta);
         setShareMsg("공유 링크가 복사되었어요.");
+        try { sendEvent("quiz_share", { quiz_slug: slug, result_type: targetType || "", method: "copy" }); } catch (e) {}
       }
     } catch (e) {
       setShareMsg("공유가 취소되었거나 실패했어요.");

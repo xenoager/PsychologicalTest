@@ -1,12 +1,17 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Progress from "../components/Progress.jsx";
+import { sendEvent } from "../lib/ga.js";
 import { evaluateQuiz } from "../lib/engine.js";
 import { assetUrl } from "../utils/asset.js";
 
 export default function Quiz() {
   const { slug } = useParams();
   const nav = useNavigate();
+
+  useEffect(() => {
+    sendEvent("quiz_start", { quiz_slug: slug });
+  }, [slug]);
 
   const [raw, setRaw] = useState(null);
   const [quiz, setQuiz] = useState(null); // normalized
@@ -124,8 +129,19 @@ export default function Quiz() {
   const hasOptions = Array.isArray(q?.options) && q.options.length > 0;
   const selected = q ? answers[q.id] : undefined;
 
+  // src/pages/Quiz.jsx
   function choose(qid, oid) {
+    // 1) 답안 상태 업데이트
     setAnswers((prev) => ({ ...prev, [qid]: oid }));
+
+    // 2) 이벤트 로깅 (상태 업데이트와 별개로 안전하게 분리)
+    try {
+      sendEvent("quiz_answer", { quiz_slug: slug, qid, oid, index: index + 1 });
+    } catch (e) {
+      // no-op
+    }
+
+    // 3) (기존에 다음 문항으로 이동/점수 계산/네비게이션하는 코드가 있다면 그대로 유지)
   }
 
   function goNext() {
@@ -176,6 +192,9 @@ export default function Quiz() {
     try {
       sessionStorage.setItem(`answers:${slug}`, JSON.stringify(answers));
     } catch {}
+    try {
+      sendEvent("quiz_complete", { quiz_slug: slug, result_type: scored.type });
+    } catch (e) {}
     nav(`/${slug}/result/${scored.type}`, {
       state: { result, scored, quiz: quiz || raw, answers },
     });
