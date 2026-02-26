@@ -1,0 +1,40 @@
+/* safe-area.css — keep header out from under the status bar on mobile */
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+}
+
+/* Add this class to <body> or your top-level container */
+.safe-area {
+  padding-top: var(--safe-top);
+  padding-right: var(--safe-right);
+  padding-left: var(--safe-left);
+  padding-bottom: var(--safe-bottom);
+}
+
+/* Use on your site header wrapper */
+.header-safe {
+  position: sticky;        /* stays at the top while scrolling */
+  top: 0;
+  padding-top: var(--safe-top);
+  min-height: 56px;        /* reasonable tap target / keeps text away from the system bar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000;
+  background: inherit;     /* set your own solid color if needed */
+}
+
+/* If your header is fixed instead of sticky */
+.header-fixed-safe {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: var(--safe-top);
+  min-height: 56px;
+  z-index: 1000;
+  background: inherit;
+}

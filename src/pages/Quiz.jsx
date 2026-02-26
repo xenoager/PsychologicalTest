@@ -4,6 +4,7 @@ import Progress from "../components/Progress.jsx";
 import { sendEvent } from "../lib/ga.js";
 import { evaluateQuiz } from "../lib/engine.js";
 import { assetUrl } from "../utils/asset.js";
+import SiteFooter from "../components/SiteFooter.jsx";
 
 export default function Quiz() {
   const { slug } = useParams();
@@ -396,7 +397,16 @@ export default function Quiz() {
 
   return (
     <div className="wrap">
-      <div className="card" style={{ width: "100%", maxWidth: 880 }}>
+      <div
+        style={{
+          width: "100%",
+          maxWidth: 880,
+          display: "flex",
+          flexDirection: "column",
+          gap: 16,
+        }}
+      >
+        <div className="card" style={{ width: "100%" }}>
         {/* NEW: 메인 '마인드픽Q' 버튼을 홈으로 위쪽(최상단)에 배치 + 구분선/간격 추가 */}
         <div
           className="header"
@@ -487,6 +497,9 @@ export default function Quiz() {
             {index < total - 1 ? "다음" : "결과 보기"}
           </button>
         </div>
+      </div>
+
+      <SiteFooter />
       </div>
 
       {/* ⬇︎ 레이어 팝업(모달) — UI 구조/스타일 유지용 카드 사용 */}

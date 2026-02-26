@@ -1,0 +1,421 @@
+{
+  "categories": [
+    "MBTI",
+    "개발",
+    "교육",
+    "라이프",
+    "부모",
+    "소통",
+    "수면",
+    "스트레스",
+    "습관",
+    "연애",
+    "자기관리",
+    "커리어"
+  ],
+  "items": [
+    {
+      "slug": "work-stress-boundary",
+      "title": "직장 스트레스가 관계로 번질 때: 퇴근 후 ‘전환 루틴’",
+      "subtitle": "일-삶 경계를 만드는 15분 습관",
+      "category": "스트레스",
+      "tags": [
+        "스트레스",
+        "커리어",
+        "루틴"
+      ],
+      "date": "2026-02-25",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "couple-date-ideas",
+      "title": "데이트가 지루할 때: ‘경험형’ 아이디어 12개",
+      "subtitle": "돈보다 기억이 남는 커플 데이트 구성",
+      "category": "연애",
+      "tags": [
+        "커플",
+        "데이트",
+        "연애"
+      ],
+      "date": "2026-02-24",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "relationship-check",
+      "title": "연애가 힘들 때 점검해야 할 5가지(감정/시간/기대/경계/대화)",
+      "subtitle": "문제의 원인을 ‘사람’이 아닌 ‘패턴’에서 찾기",
+      "category": "연애",
+      "tags": [
+        "연애",
+        "관계",
+        "체크리스트"
+      ],
+      "date": "2026-02-23",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "memory-method",
+      "title": "기억이 오래가는 복습 설계: ‘간격’이 전부다",
+      "subtitle": "시험/자격증에 바로 쓰는 간격 반복 가이드",
+      "category": "교육",
+      "tags": [
+        "교육",
+        "학습",
+        "습관"
+      ],
+      "date": "2026-02-22",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "study-focus",
+      "title": "공부 집중이 안 될 때: 25분이 아니라 ‘시작 2분’",
+      "subtitle": "공부 루틴이 무너질 때 회복하는 방법",
+      "category": "교육",
+      "tags": [
+        "교육",
+        "집중",
+        "습관"
+      ],
+      "date": "2026-02-21",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "money-habit",
+      "title": "돈을 모으는 사람의 작은 습관 8가지",
+      "subtitle": "절약이 아니라 ‘지출의 자동화’가 핵심",
+      "category": "라이프",
+      "tags": [
+        "습관",
+        "자기관리",
+        "라이프"
+      ],
+      "date": "2026-02-20",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "first-impression",
+      "title": "첫인상은 ‘이미지’보다 ‘리듬’에서 결정된다",
+      "subtitle": "말의 속도·표정·간격을 조정하는 체크포인트",
+      "category": "라이프",
+      "tags": [
+        "인상",
+        "소통",
+        "자기관리"
+      ],
+      "date": "2026-02-19",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "decision-making",
+      "title": "결정 장애 줄이는 ‘기준 3개’ 만들기",
+      "subtitle": "선택지를 줄이고 후회를 덜 남기는 방법",
+      "category": "라이프",
+      "tags": [
+        "결정",
+        "습관",
+        "자기이해"
+      ],
+      "date": "2026-02-18",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "emotion-regulation",
+      "title": "감정조절이 어려울 때 바로 쓰는 4가지 문장",
+      "subtitle": "폭발/회피를 줄이는 자기대화 프레이즈",
+      "category": "자기관리",
+      "tags": [
+        "감정",
+        "자기관리",
+        "소통"
+      ],
+      "date": "2026-02-17",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "digital-detox",
+      "title": "디지털 디톡스는 ‘끊기’가 아니라 ‘대체’다",
+      "subtitle": "스마트폰 사용 시간을 줄이는 현실적 설계",
+      "category": "자기관리",
+      "tags": [
+        "자기관리",
+        "습관",
+        "집중"
+      ],
+      "date": "2026-02-16",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "parenting-routine",
+      "title": "아이 루틴 만들기: 규칙보다 ‘환경’이 먼저다",
+      "subtitle": "아침/저녁 루틴을 자연스럽게 굴리는 방법",
+      "category": "부모",
+      "tags": [
+        "부모",
+        "루틴",
+        "습관"
+      ],
+      "date": "2026-02-15",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "parenting-anger",
+      "title": "아이에게 화가 날 때: ‘멈춤-이름-요청’ 3단계",
+      "subtitle": "훈육이 흔들릴 때도 관계를 지키는 말",
+      "category": "부모",
+      "tags": [
+        "부모",
+        "감정",
+        "훈육"
+      ],
+      "date": "2026-02-14",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "dev-deepwork",
+      "title": "딥워크를 방해하는 7가지 ‘보이지 않는’ 요인",
+      "subtitle": "알림·맥락전환·완벽주의를 다루는 실전 팁",
+      "category": "개발",
+      "tags": [
+        "개발",
+        "집중",
+        "생산성"
+      ],
+      "date": "2026-02-13",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "dev-burnout",
+      "title": "개발자 번아웃: ‘코드’가 싫어진 순간부터 관리가 필요하다",
+      "subtitle": "집중력 하락을 회복하는 작업 리듬",
+      "category": "개발",
+      "tags": [
+        "개발",
+        "번아웃",
+        "습관"
+      ],
+      "date": "2026-02-12",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "interview-selfintro",
+      "title": "면접 자기소개가 막힐 때: 3단 구성으로 끝내기",
+      "subtitle": "경험을 ‘스토리’로 바꾸는 구조와 예시",
+      "category": "커리어",
+      "tags": [
+        "커리어",
+        "면접",
+        "자기소개"
+      ],
+      "date": "2026-02-11",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "career-workstyle",
+      "title": "일잘러의 업무 스타일은 ‘속도’보다 ‘재현성’",
+      "subtitle": "업무 스트레스 줄이는 체크리스트와 템플릿",
+      "category": "커리어",
+      "tags": [
+        "커리어",
+        "습관",
+        "생산성"
+      ],
+      "date": "2026-02-10",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "career-feedback",
+      "title": "피드백을 ‘공격’으로 받아들이지 않는 기술",
+      "subtitle": "자존감 지키면서 성장하는 대화 프레임",
+      "category": "커리어",
+      "tags": [
+        "커리어",
+        "소통",
+        "성장"
+      ],
+      "date": "2026-02-09",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "nap-guide",
+      "title": "낮잠이 독이 될 때: 시간·타이밍 가이드",
+      "subtitle": "‘짧게 자고 개운한’ 낮잠을 만드는 규칙",
+      "category": "수면",
+      "tags": [
+        "수면",
+        "집중",
+        "회복"
+      ],
+      "date": "2026-02-08",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "sleep-rhythm",
+      "title": "수면 리듬을 망치는 5가지 행동(그리고 대안)",
+      "subtitle": "잠들기 전 60분 설계로 퀄리티 올리기",
+      "category": "수면",
+      "tags": [
+        "수면",
+        "루틴",
+        "회복"
+      ],
+      "date": "2026-02-07",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "micro-habit",
+      "title": "작은 습관이 쌓이는 구조: ‘2분 규칙’ 실전 적용",
+      "subtitle": "작게 시작해서 자동화까지 가는 단계별 설계",
+      "category": "습관",
+      "tags": [
+        "습관",
+        "루틴",
+        "자기관리"
+      ],
+      "date": "2026-02-06",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "procrastination",
+      "title": "미루는 습관이 ‘의지’ 문제가 아닌 이유",
+      "subtitle": "뇌가 회피하는 패턴을 바꾸는 5분 시작법",
+      "category": "습관",
+      "tags": [
+        "습관",
+        "집중",
+        "자기관리"
+      ],
+      "date": "2026-02-05",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "stress-reset-10m",
+      "title": "10분 스트레스 리셋 루틴",
+      "subtitle": "호흡·움직임·정리 3단계로 ‘과열된 뇌’ 식히기",
+      "category": "스트레스",
+      "tags": [
+        "스트레스",
+        "루틴",
+        "자기관리"
+      ],
+      "date": "2026-02-04",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "burnout-signs",
+      "title": "번아웃 신호는 ‘피곤함’이 아니라 ‘무기력’에서 시작한다",
+      "subtitle": "회복을 위한 1주 루틴과, 당장 줄일 것 3가지",
+      "category": "스트레스",
+      "tags": [
+        "스트레스",
+        "번아웃",
+        "회복"
+      ],
+      "date": "2026-02-03",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "love-language",
+      "title": "사랑의 언어 5가지, 커플 갈등을 줄이는 사용법",
+      "subtitle": "‘나는 해줬는데’가 반복될 때 확인해야 할 것",
+      "category": "연애",
+      "tags": [
+        "연애",
+        "커플",
+        "소통"
+      ],
+      "date": "2026-02-02",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "boundaries",
+      "title": "선 긋기가 어려운 사람을 위한 3문장",
+      "subtitle": "미안함 없이 ‘거절’하고 관계를 지키는 말하기",
+      "category": "연애",
+      "tags": [
+        "연애",
+        "경계",
+        "소통"
+      ],
+      "date": "2026-02-01",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "attachment-style",
+      "title": "애착유형을 ‘진단’ 말고 ‘지도’로 쓰는 법",
+      "subtitle": "불안·회피·안정의 특징과, 일상에서 바꾸는 작은 행동",
+      "category": "연애",
+      "tags": [
+        "연애",
+        "애착",
+        "자기이해"
+      ],
+      "date": "2026-01-31",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "conflict-fair",
+      "title": "싸울 때 관계가 좋아지는 사람들의 규칙",
+      "subtitle": "감정 폭발을 줄이고, 해결로 가는 ‘공정한 싸움’ 체크리스트",
+      "category": "연애",
+      "tags": [
+        "연애",
+        "갈등",
+        "커플"
+      ],
+      "date": "2026-01-30",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "listening-skills",
+      "title": "상대가 ‘들어준 느낌’을 받게 하는 경청 4단계",
+      "subtitle": "조언보다 공감이 먼저인 이유와, 질문 문장 예시",
+      "category": "소통",
+      "tags": [
+        "소통",
+        "공감",
+        "대화"
+      ],
+      "date": "2026-01-29",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "text-tone",
+      "title": "카톡 말투가 꼬이는 이유: ‘의도’와 ‘톤’이 어긋나는 6가지 패턴",
+      "subtitle": "짧은 문장일수록 오해가 커진다 — 실전 수정 템플릿",
+      "category": "소통",
+      "tags": [
+        "소통",
+        "관계",
+        "카톡"
+      ],
+      "date": "2026-01-28",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "mbti-misconceptions",
+      "title": "MBTI 오해 7가지: ‘이 유형은 원래 그래’가 위험한 이유",
+      "subtitle": "고정관념을 줄이면 관계 갈등이 확 줄어드는 포인트",
+      "category": "MBTI",
+      "tags": [
+        "MBTI",
+        "관계",
+        "편견"
+      ],
+      "date": "2026-01-27",
+      "readingTime": "3분"
+    },
+    {
+      "slug": "mbti-language",
+      "title": "MBTI를 ‘유형’이 아니라 ‘대화 언어’로 쓰는 법",
+      "subtitle": "관계에서 라벨링을 줄이고, 소통 도구로 쓰는 5가지 원칙",
+      "category": "MBTI",
+      "tags": [
+        "MBTI",
+        "소통",
+        "자기이해"
+      ],
+      "date": "2026-01-26",
+      "readingTime": "3분"
+    }
+  ]
+}

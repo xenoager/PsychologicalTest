@@ -3,6 +3,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { assetUrl } from "../utils/asset.js";
 import { evaluateQuiz } from "../lib/engine.js";
 import { sendEvent } from "../lib/ga.js";
+import SiteFooter from "../components/SiteFooter.jsx";
 
 /* ===================== helpers ===================== */
 function isMbtiCode(s) {
@@ -568,9 +569,18 @@ export default function Result() {
 
   return (
     <div className="wrap">
-      <div className="card" style={{ width: "100%", maxWidth: 880 }}>
-        {HeaderBrand}
-        {TopBar}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: 880,
+          display: "flex",
+          flexDirection: "column",
+          gap: 16,
+        }}
+      >
+        <div className="card" style={{ width: "100%" }}>
+          {HeaderBrand}
+          {TopBar}
 
         <div className="result-head">
           <div className="kicker">{quiz?.title || slug}</div>
@@ -663,8 +673,8 @@ export default function Result() {
           </div>
         )}
 
-        {(picked.ideal_date || picked.communication || picked.gift_idea) && (
-          <div className="result-grid">
+          {(picked.ideal_date || picked.communication || picked.gift_idea) && (
+            <div className="result-grid">
             {picked.ideal_date && (
               <div className="result-card">
                 <h4>이런 데이트 좋아요</h4>
@@ -683,8 +693,11 @@ export default function Result() {
                 <p style={{ margin: 0 }}>{picked.gift_idea}</p>
               </div>
             )}
-          </div>
-        )}
+            </div>
+          )}
+        </div>
+
+        <SiteFooter />
       </div>
 
       {!!shareMsg && <div className="toast">{shareMsg}</div>}

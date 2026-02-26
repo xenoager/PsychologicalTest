@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mindpickq.com/sitemap.xml
+Sitemap: https://www.mindpickq.com/sitemap.xml

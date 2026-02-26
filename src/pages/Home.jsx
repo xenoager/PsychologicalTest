@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import Card from "../components/Card.jsx";
+import SiteFooter from "../components/SiteFooter.jsx";
 
 /**
  * Home.jsx (v3.4)
@@ -484,6 +485,46 @@ export default function Home() {
                 개인정보처리방침 전체 보기
               </Link>
             </div>
+
+            {/* 서비스/정책 빠른 링크 */}
+            <div className="policy-under-category">
+              <div style={{ fontWeight: 800, marginBottom: 6 }}>
+                서비스 안내
+              </div>
+              <div style={{ lineHeight: 1.7 }}>
+                <Link to="/articles" className="policy-link">
+                  가이드·칼럼
+                </Link>
+                {" · "}
+                <Link to="/faq" className="policy-link">
+                  FAQ
+                </Link>
+                {" · "}
+                <Link to="/about" className="policy-link">
+                  소개
+                </Link>
+                {" · "}
+                <Link to="/contact" className="policy-link">
+                  문의
+                </Link>
+                <br />
+                <Link to="/terms" className="policy-link">
+                  이용약관
+                </Link>
+                {" · "}
+                <Link to="/cookies" className="policy-link">
+                  쿠키·광고
+                </Link>
+                {" · "}
+                <Link to="/disclaimer" className="policy-link">
+                  면책
+                </Link>
+                {" · "}
+                <Link to="/site-map" className="policy-link">
+                  사이트맵
+                </Link>
+              </div>
+            </div>
           </aside>
 
           <main className="main">
@@ -501,6 +542,8 @@ export default function Home() {
                 )}
               </div>
             </section>
+
+            <SiteFooter />
           </main>
         </div>
       </div>

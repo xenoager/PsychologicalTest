@@ -1,6 +1,7 @@
 // src/pages/Privacy.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import SiteFooter from "../components/SiteFooter.jsx";
 
 export default function Privacy() {
   const today = "2025-10-14"; // 배포 시 갱신
@@ -167,6 +168,8 @@ export default function Privacy() {
                 </p>
               </article>
             </section>
+
+            <SiteFooter />
           </main>
         </div>
       </div>
